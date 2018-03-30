@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HK7-zv-Pe1">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Details Puzzle View Controller-->
+        <scene sceneID="3qh-MJ-Xq0">
+            <objects>
+                <viewController id="HK7-zv-Pe1" customClass="DetailsPuzzleViewController" customModule="JigsawPuzzle" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HOh-VR-PfU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bmw-2" translatesAutoresizingMaskIntoConstraints="NO" id="Ksu-pR-oHx">
+                                <rect key="frame" x="8" y="28" width="304" height="329.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cDU-Wx-vNl">
+                                <rect key="frame" x="142.5" y="381.5" width="35" height="34.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="29"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.19215686274509802" blue="0.55294117647058827" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yht-Iq-dlq" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="82.5" y="496" width="155" height="40"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.19215686269999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="155" id="gzp-Wv-uSx"/>
+                                    <constraint firstAttribute="height" constant="40" id="nkV-iE-VST"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="23"/>
+                                <state key="normal" title="Старт">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startPuzzleButtonAction:" destination="HK7-zv-Pe1" eventType="touchUpInside" id="clW-Wk-a9l"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7iD-jd-Klh" customClass="StepSlider">
+                                <rect key="frame" x="16" y="424" width="288" height="40"/>
+                                <color key="tintColor" red="0.61960784310000006" green="0.2666666667" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zQM-Gp-fyB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="maxCount">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="index">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackHeight">
+                                        <real key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="trackCircleRadius">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sliderCircleRadius">
+                                        <real key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="sliderCircleColor">
+                                        <color key="value" red="0.35686274509999999" green="0.19215686269999999" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="dotsInteractionEnabled" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeValue:" destination="HK7-zv-Pe1" eventType="valueChanged" id="xOE-xj-IsL"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yht-Iq-dlq" firstAttribute="centerX" secondItem="Bi3-zq-1WF" secondAttribute="centerX" id="0Ze-uN-YcY"/>
+                            <constraint firstItem="cDU-Wx-vNl" firstAttribute="centerX" secondItem="Ksu-pR-oHx" secondAttribute="centerX" id="O1p-54-eag"/>
+                            <constraint firstItem="Bi3-zq-1WF" firstAttribute="trailing" secondItem="7iD-jd-Klh" secondAttribute="trailing" constant="16" id="PAF-jb-7lD"/>
+                            <constraint firstItem="Ksu-pR-oHx" firstAttribute="height" secondItem="HOh-VR-PfU" secondAttribute="height" multiplier="0.75" id="PAz-bL-dRJ"/>
+                            <constraint firstItem="7iD-jd-Klh" firstAttribute="leading" secondItem="Bi3-zq-1WF" secondAttribute="leading" constant="16" id="Ueg-KR-D2n"/>
+                            <constraint firstItem="Bi3-zq-1WF" firstAttribute="bottom" secondItem="yht-Iq-dlq" secondAttribute="bottom" constant="32" id="aCN-Gd-t3r"/>
+                            <constraint firstItem="cDU-Wx-vNl" firstAttribute="top" secondItem="Ksu-pR-oHx" secondAttribute="bottom" constant="24" id="c3J-fz-UlO"/>
+                            <constraint firstItem="Ksu-pR-oHx" firstAttribute="leading" secondItem="Bi3-zq-1WF" secondAttribute="leading" constant="8" id="dpm-c8-tMy"/>
+                            <constraint firstItem="yht-Iq-dlq" firstAttribute="top" secondItem="7iD-jd-Klh" secondAttribute="bottom" constant="32" id="iWl-su-xZm"/>
+                            <constraint firstItem="Bi3-zq-1WF" firstAttribute="trailing" secondItem="Ksu-pR-oHx" secondAttribute="trailing" constant="8" id="nPK-Va-rTy"/>
+                            <constraint firstItem="Ksu-pR-oHx" firstAttribute="top" secondItem="Bi3-zq-1WF" secondAttribute="top" constant="8" id="s2X-EK-VNT"/>
+                            <constraint firstItem="Ksu-pR-oHx" firstAttribute="height" secondItem="HOh-VR-PfU" secondAttribute="height" multiplier="0.58" id="tmH-Hw-0RE"/>
+                            <constraint firstItem="7iD-jd-Klh" firstAttribute="top" secondItem="cDU-Wx-vNl" secondAttribute="bottom" constant="8" id="z8Q-jX-FfP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Bi3-zq-1WF"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="PAz-bL-dRJ"/>
+                                <exclude reference="tmH-Hw-0RE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="tmH-Hw-0RE"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="PAz-bL-dRJ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Ksu-pR-oHx" id="6lQ-4T-Wjt"/>
+                        <outlet property="slider" destination="7iD-jd-Klh" id="klp-Lq-vHH"/>
+                        <outlet property="stepPuzzleLabel" destination="cDU-Wx-vNl" id="Q2P-eN-mW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVu-SA-eOu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="584.79999999999995" y="361.16941529235385"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bmw-2" width="1280" height="800"/>
+    </resources>
+</document>

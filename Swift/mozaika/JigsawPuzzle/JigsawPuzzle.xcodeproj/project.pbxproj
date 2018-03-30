@@ -1,0 +1,1065 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A04CAF62045C38F0033C54A /* ProScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A04CAF52045C38F0033C54A /* ProScreenViewController.swift */; };
+		3A0558E4204A78E60054CA19 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A0558E3204A78E60054CA19 /* StoreKit.framework */; };
+		3A0558E9204A83720054CA19 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0558E8204A83720054CA19 /* User.swift */; };
+		3A0558EB204A8FB30054CA19 /* UIApplication+TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A0558EA204A8FB30054CA19 /* UIApplication+TopViewController.swift */; };
+		3A1E1A1F20468E2A00FA6F4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3A1E1A2120468E2A00FA6F4F /* Localizable.strings */; };
+		3A2358F9203193DA002FC293 /* PuzzleGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2358F8203193DA002FC293 /* PuzzleGameViewController.swift */; };
+		3A2358FB203193E1002FC293 /* PuzzleGameViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A2358FA203193E1002FC293 /* PuzzleGameViewController.storyboard */; };
+		3A2CFAEB2031AC3500977362 /* ConnectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFAEA2031AC3500977362 /* ConnectionManager.swift */; };
+		3A2CFAEF2031AECE00977362 /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFAEE2031AECE00977362 /* JSONParser.swift */; };
+		3A2CFAF12031AF4800977362 /* Pictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2CFAF02031AF4800977362 /* Pictures.swift */; };
+		3A387EB020501B1C002134E7 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3A387EAF20501B1C002134E7 /* Info.plist */; };
+		3A387EB8205021DB002134E7 /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A387EBA205021DB002134E7 /* SplashScreenViewController.storyboard */; };
+		3A59A6E820341DEE009BF343 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3A59A6E120341DED009BF343 /* LICENSE */; };
+		3A59A6E920341DEE009BF343 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3A59A6E220341DED009BF343 /* README.md */; };
+		3A59A6EA20341DEE009BF343 /* StepSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A6E620341DED009BF343 /* StepSlider.m */; };
+		3A59A6EF20341ECE009BF343 /* JigsawPuzzle-Bridging-Header.h in Resources */ = {isa = PBXBuildFile; fileRef = 3A59A6EE20341EA8009BF343 /* JigsawPuzzle-Bridging-Header.h */; };
+		3A59A6F5203425EC009BF343 /* Array + RandomSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A59A6F4203425EC009BF343 /* Array + RandomSort.swift */; };
+		3A5E98712036DAC300739A7D /* PuzzleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E98702036DAC300739A7D /* PuzzleManager.swift */; };
+		3A72F00B203FF0C9002B1972 /* MyPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72F00A203FF0C9002B1972 /* MyPuzzleViewController.swift */; };
+		3A72F011203FF3E7002B1972 /* MyPuzzleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A72F00F203FF3E7002B1972 /* MyPuzzleCollectionViewCell.swift */; };
+		3A72F012203FF3E7002B1972 /* MyPuzzleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A72F010203FF3E7002B1972 /* MyPuzzleCollectionViewCell.xib */; };
+		3AA4A911202C94AC008CFD48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4A910202C94AC008CFD48 /* AppDelegate.swift */; };
+		3AA4A918202C94AC008CFD48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4A917202C94AC008CFD48 /* Assets.xcassets */; };
+		3AA4A91B202C94AC008CFD48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA4A919202C94AC008CFD48 /* LaunchScreen.storyboard */; };
+		3AA4A930202C9587008CFD48 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4A92F202C9587008CFD48 /* SplashScreenViewController.swift */; };
+		3AA4A936202C992A008CFD48 /* ApplicationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA4A935202C992A008CFD48 /* ApplicationModel.swift */; };
+		3AA63681203D70C100DF6B08 /* PuzzleStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA63680203D70C100DF6B08 /* PuzzleStateManager.swift */; };
+		3AA7CDE0204E86D6009631D9 /* DetailsPuzzleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7CDE2204E86D6009631D9 /* DetailsPuzzleViewController.storyboard */; };
+		3AA7CDED204E86F1009631D9 /* EndPuzzleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7CDEF204E86F1009631D9 /* EndPuzzleViewController.storyboard */; };
+		3AA7CDFA204E870C009631D9 /* MyPuzzleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7CDFC204E870C009631D9 /* MyPuzzleViewController.storyboard */; };
+		3AA7CE07204E8720009631D9 /* ProScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AA7CE09204E8720009631D9 /* ProScreenViewController.storyboard */; };
+		3AB2B8F02036F977003B2007 /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B8EF2036F977003B2007 /* ElementCollectionViewCell.swift */; };
+		3AB2B8F22036FB95003B2007 /* ElementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB2B8F12036FB95003B2007 /* ElementCollectionViewCell.xib */; };
+		3AB2B8F520371A48003B2007 /* EndPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B8F420371A48003B2007 /* EndPuzzleViewController.swift */; };
+		3ACF54DA203D6C0100E32151 /* PuzzleItemPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF54D9203D6C0100E32151 /* PuzzleItemPosition.swift */; };
+		3AD5B0042046CEE1001C53C6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5B0032046CEE1001C53C6 /* WebViewController.swift */; };
+		3AD5B0062046CEE9001C53C6 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5B0052046CEE9001C53C6 /* WebViewController.storyboard */; };
+		3AE49C192047E0BD0038BB56 /* RageProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE49C172047E0BD0038BB56 /* RageProducts.swift */; };
+		3AE49C1A2047E0BD0038BB56 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE49C182047E0BD0038BB56 /* IAPHelper.swift */; };
+		3AEC9AEC2033004C00F7D40B /* UIImage + Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC9AEB2033004C00F7D40B /* UIImage + Size.swift */; };
+		3AECA904202D7DFF00E505B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA903202D7DFF00E505B2 /* MainViewController.swift */; };
+		3AECA906202D7E3000E505B2 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA905202D7E3000E505B2 /* MainViewController.storyboard */; };
+		3AECA908202D7F5200E505B2 /* UIViewController+Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA907202D7F5200E505B2 /* UIViewController+Storyboard.swift */; };
+		3AECA90A202D81AC00E505B2 /* UIApplication+StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA909202D81AC00E505B2 /* UIApplication+StatusBar.swift */; };
+		3AECA90C202D82F100E505B2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA90B202D82F100E505B2 /* UIColor.swift */; };
+		3AECA910202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA90E202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift */; };
+		3AECA911202D984300E505B2 /* CategoriesPuzzleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA90F202D984300E505B2 /* CategoriesPuzzleTableViewCell.xib */; };
+		3AECA913202D9FF100E505B2 /* Int+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA912202D9FF100E505B2 /* Int+String.swift */; };
+		3AECA915202DA25800E505B2 /* UIViewController+UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA914202DA25800E505B2 /* UIViewController+UIAlertController.swift */; };
+		3AECA920202DB91400E505B2 /* SFUIDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA917202DB91400E505B2 /* SFUIDisplay-Semibold.otf */; };
+		3AECA921202DB91400E505B2 /* SFUIDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA918202DB91400E505B2 /* SFUIDisplay-Light.otf */; };
+		3AECA922202DB91400E505B2 /* SFUIDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA919202DB91400E505B2 /* SFUIDisplay-Regular.otf */; };
+		3AECA923202DB91400E505B2 /* SFUIDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91A202DB91400E505B2 /* SFUIDisplay-Heavy.otf */; };
+		3AECA924202DB91400E505B2 /* SFUIDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91B202DB91400E505B2 /* SFUIDisplay-Thin.otf */; };
+		3AECA925202DB91400E505B2 /* SFUIDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91C202DB91400E505B2 /* SFUIDisplay-Medium.otf */; };
+		3AECA926202DB91400E505B2 /* SFUIDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91D202DB91400E505B2 /* SFUIDisplay-Black.otf */; };
+		3AECA927202DB91400E505B2 /* SFUIDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91E202DB91400E505B2 /* SFUIDisplay-Ultralight.otf */; };
+		3AECA928202DB91400E505B2 /* SFUIDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA91F202DB91400E505B2 /* SFUIDisplay-Bold.otf */; };
+		3AECA92C202DBCBD00E505B2 /* PuzzleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA92A202DBCBD00E505B2 /* PuzzleCollectionViewCell.swift */; };
+		3AECA92D202DBCBD00E505B2 /* PuzzleCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA92B202DBCBD00E505B2 /* PuzzleCollectionViewCell.xib */; };
+		3AECA92F202DBD7200E505B2 /* ATView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA92E202DBD7200E505B2 /* ATView.swift */; };
+		3AECA932202DC62400E505B2 /* DetailsPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA931202DC62400E505B2 /* DetailsPuzzleViewController.swift */; };
+		3AECA936202DC71C00E505B2 /* UIViewController+BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA935202DC71C00E505B2 /* UIViewController+BackButton.swift */; };
+		3AECA938202DC84E00E505B2 /* ATButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA937202DC84E00E505B2 /* ATButton.swift */; };
+		408A304B2056703E00CAFEC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 408A304A2056703E00CAFEC1 /* GoogleService-Info.plist */; };
+		40B35BC720592D7A00DF826A /* Privacy Policy.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 40B35BC620592D7A00DF826A /* Privacy Policy.pdf */; };
+		40B35BC920592D8000DF826A /* Terms of Use.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 40B35BC820592D8000DF826A /* Terms of Use.pdf */; };
+		DB1BB210BFF6E233938F963A /* Pods_JigsawPuzzle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DA4A64416CA5E382FF33668 /* Pods_JigsawPuzzle.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DA4A64416CA5E382FF33668 /* Pods_JigsawPuzzle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JigsawPuzzle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C60AA29C2534D4FA1112064 /* Pods-JigsawPuzzle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawPuzzle.release.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawPuzzle/Pods-JigsawPuzzle.release.xcconfig"; sourceTree = "<group>"; };
+		3A04CAF52045C38F0033C54A /* ProScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProScreenViewController.swift; sourceTree = "<group>"; };
+		3A04CAF92045C98D0033C54A /* JigsawPuzzle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JigsawPuzzle.entitlements; sourceTree = "<group>"; };
+		3A0558E3204A78E60054CA19 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3A0558E8204A83720054CA19 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3A0558EA204A8FB30054CA19 /* UIApplication+TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+TopViewController.swift"; sourceTree = "<group>"; };
+		3A1E1A1820468DA700FA6F4F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A1E1A1920468DB600FA6F4F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A1E1A1A20468DE500FA6F4F /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		3A1E1A1B20468DF100FA6F4F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A1E1A1C20468DFE00FA6F4F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3A1E1A2020468E2A00FA6F4F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A1E1A2220468E2C00FA6F4F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A1E1A2320468E2D00FA6F4F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A1E1A2420468E2D00FA6F4F /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		3A1E1A2520468E3200FA6F4F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A1E1A2620468E3300FA6F4F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A2358F8203193DA002FC293 /* PuzzleGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleGameViewController.swift; sourceTree = "<group>"; };
+		3A2358FA203193E1002FC293 /* PuzzleGameViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PuzzleGameViewController.storyboard; sourceTree = "<group>"; };
+		3A2CFAEA2031AC3500977362 /* ConnectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionManager.swift; sourceTree = "<group>"; };
+		3A2CFAEE2031AECE00977362 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		3A2CFAF02031AF4800977362 /* Pictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pictures.swift; sourceTree = "<group>"; };
+		3A387EAF20501B1C002134E7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A387EBC205021DE002134E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/SplashScreenViewController.strings; sourceTree = "<group>"; };
+		3A387EBD20502330002134E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SplashScreenViewController.storyboard; sourceTree = "<group>"; };
+		3A387EBF205023A8002134E7 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/SplashScreenViewController.strings; sourceTree = "<group>"; };
+		3A387EC1205023A9002134E7 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/SplashScreenViewController.strings"; sourceTree = "<group>"; };
+		3A387EC3205023AA002134E7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/SplashScreenViewController.strings; sourceTree = "<group>"; };
+		3A387EC5205023AA002134E7 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/SplashScreenViewController.strings; sourceTree = "<group>"; };
+		3A387EC620502419002134E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DetailsPuzzleViewController.storyboard; sourceTree = "<group>"; };
+		3A387EC72050243A002134E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EndPuzzleViewController.storyboard; sourceTree = "<group>"; };
+		3A387EC820502449002134E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MyPuzzleViewController.storyboard; sourceTree = "<group>"; };
+		3A387EC9205025B8002134E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ProScreenViewController.storyboard; sourceTree = "<group>"; };
+		3A387ECB205025CB002134E7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/ProScreenViewController.strings; sourceTree = "<group>"; };
+		3A59A6E120341DED009BF343 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3A59A6E220341DED009BF343 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3A59A6E620341DED009BF343 /* StepSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepSlider.m; sourceTree = "<group>"; };
+		3A59A6E720341DED009BF343 /* StepSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepSlider.h; sourceTree = "<group>"; };
+		3A59A6EE20341EA8009BF343 /* JigsawPuzzle-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JigsawPuzzle-Bridging-Header.h"; sourceTree = "<group>"; };
+		3A59A6F4203425EC009BF343 /* Array + RandomSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array + RandomSort.swift"; sourceTree = "<group>"; };
+		3A5E98702036DAC300739A7D /* PuzzleManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleManager.swift; sourceTree = "<group>"; };
+		3A72F00A203FF0C9002B1972 /* MyPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPuzzleViewController.swift; sourceTree = "<group>"; };
+		3A72F00F203FF3E7002B1972 /* MyPuzzleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPuzzleCollectionViewCell.swift; sourceTree = "<group>"; };
+		3A72F010203FF3E7002B1972 /* MyPuzzleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPuzzleCollectionViewCell.xib; sourceTree = "<group>"; };
+		3AA4A90D202C94AC008CFD48 /* JigsawPuzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JigsawPuzzle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA4A910202C94AC008CFD48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3AA4A917202C94AC008CFD48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3AA4A91A202C94AC008CFD48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3AA4A92F202C9587008CFD48 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		3AA4A935202C992A008CFD48 /* ApplicationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationModel.swift; sourceTree = "<group>"; };
+		3AA63680203D70C100DF6B08 /* PuzzleStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleStateManager.swift; sourceTree = "<group>"; };
+		3AA7CDE4204E86D9009631D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/DetailsPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDE6204E86DA009631D9 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/DetailsPuzzleViewController.strings"; sourceTree = "<group>"; };
+		3AA7CDE8204E86DB009631D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/DetailsPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDEA204E86DC009631D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/DetailsPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDEC204E86DC009631D9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/DetailsPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDF1204E86F3009631D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/EndPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDF3204E86F4009631D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/EndPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDF5204E86F5009631D9 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/EndPuzzleViewController.strings"; sourceTree = "<group>"; };
+		3AA7CDF7204E86F6009631D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/EndPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDF9204E86F7009631D9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/EndPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CDFE204E870E009631D9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MyPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CE00204E870F009631D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/MyPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CE02204E8710009631D9 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/MyPuzzleViewController.strings"; sourceTree = "<group>"; };
+		3AA7CE04204E8711009631D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/MyPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CE06204E8712009631D9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/MyPuzzleViewController.strings; sourceTree = "<group>"; };
+		3AA7CE0D204E8724009631D9 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/ProScreenViewController.strings; sourceTree = "<group>"; };
+		3AA7CE0F204E8725009631D9 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/ProScreenViewController.strings"; sourceTree = "<group>"; };
+		3AA7CE11204E8726009631D9 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/ProScreenViewController.strings; sourceTree = "<group>"; };
+		3AA7CE13204E8727009631D9 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/ProScreenViewController.strings; sourceTree = "<group>"; };
+		3AB2B8EF2036F977003B2007 /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
+		3AB2B8F12036FB95003B2007 /* ElementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementCollectionViewCell.xib; sourceTree = "<group>"; };
+		3AB2B8F420371A48003B2007 /* EndPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPuzzleViewController.swift; sourceTree = "<group>"; };
+		3ACF54D9203D6C0100E32151 /* PuzzleItemPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemPosition.swift; sourceTree = "<group>"; };
+		3AD5B0032046CEE1001C53C6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		3AD5B0052046CEE9001C53C6 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
+		3AE49C172047E0BD0038BB56 /* RageProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RageProducts.swift; sourceTree = "<group>"; };
+		3AE49C182047E0BD0038BB56 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		3AEC9AEB2033004C00F7D40B /* UIImage + Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Size.swift"; sourceTree = "<group>"; };
+		3AECA903202D7DFF00E505B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3AECA905202D7E3000E505B2 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		3AECA907202D7F5200E505B2 /* UIViewController+Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Storyboard.swift"; sourceTree = "<group>"; };
+		3AECA909202D81AC00E505B2 /* UIApplication+StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+StatusBar.swift"; sourceTree = "<group>"; };
+		3AECA90B202D82F100E505B2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3AECA90E202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesPuzzleTableViewCell.swift; sourceTree = "<group>"; };
+		3AECA90F202D984300E505B2 /* CategoriesPuzzleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesPuzzleTableViewCell.xib; sourceTree = "<group>"; };
+		3AECA912202D9FF100E505B2 /* Int+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+String.swift"; sourceTree = "<group>"; };
+		3AECA914202DA25800E505B2 /* UIViewController+UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+UIAlertController.swift"; sourceTree = "<group>"; };
+		3AECA917202DB91400E505B2 /* SFUIDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		3AECA918202DB91400E505B2 /* SFUIDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Light.otf"; sourceTree = "<group>"; };
+		3AECA919202DB91400E505B2 /* SFUIDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Regular.otf"; sourceTree = "<group>"; };
+		3AECA91A202DB91400E505B2 /* SFUIDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		3AECA91B202DB91400E505B2 /* SFUIDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Thin.otf"; sourceTree = "<group>"; };
+		3AECA91C202DB91400E505B2 /* SFUIDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Medium.otf"; sourceTree = "<group>"; };
+		3AECA91D202DB91400E505B2 /* SFUIDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Black.otf"; sourceTree = "<group>"; };
+		3AECA91E202DB91400E505B2 /* SFUIDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		3AECA91F202DB91400E505B2 /* SFUIDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIDisplay-Bold.otf"; sourceTree = "<group>"; };
+		3AECA92A202DBCBD00E505B2 /* PuzzleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleCollectionViewCell.swift; sourceTree = "<group>"; };
+		3AECA92B202DBCBD00E505B2 /* PuzzleCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PuzzleCollectionViewCell.xib; sourceTree = "<group>"; };
+		3AECA92E202DBD7200E505B2 /* ATView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATView.swift; sourceTree = "<group>"; };
+		3AECA931202DC62400E505B2 /* DetailsPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsPuzzleViewController.swift; sourceTree = "<group>"; };
+		3AECA935202DC71C00E505B2 /* UIViewController+BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+BackButton.swift"; sourceTree = "<group>"; };
+		3AECA937202DC84E00E505B2 /* ATButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ATButton.swift; sourceTree = "<group>"; };
+		408A304A2056703E00CAFEC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		40B35BC620592D7A00DF826A /* Privacy Policy.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Privacy Policy.pdf"; sourceTree = "<group>"; };
+		40B35BC820592D8000DF826A /* Terms of Use.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Terms of Use.pdf"; sourceTree = "<group>"; };
+		F27B8161D8CEDDC1CFED1BE1 /* Pods-JigsawPuzzle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JigsawPuzzle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JigsawPuzzle/Pods-JigsawPuzzle.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3AA4A90A202C94AC008CFD48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1BB210BFF6E233938F963A /* Pods_JigsawPuzzle.framework in Frameworks */,
+				3A0558E4204A78E60054CA19 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1711A44D5962A20943237085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A0558E3204A78E60054CA19 /* StoreKit.framework */,
+				0DA4A64416CA5E382FF33668 /* Pods_JigsawPuzzle.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A04CAF42045C3820033C54A /* ProScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A04CAF52045C38F0033C54A /* ProScreenViewController.swift */,
+				3AA7CE09204E8720009631D9 /* ProScreenViewController.storyboard */,
+			);
+			path = ProScreen;
+			sourceTree = "<group>";
+		};
+		3A2358F7203193D2002FC293 /* PuzzleGame */ = {
+			isa = PBXGroup;
+			children = (
+				3A2358F8203193DA002FC293 /* PuzzleGameViewController.swift */,
+				3A2358FA203193E1002FC293 /* PuzzleGameViewController.storyboard */,
+			);
+			path = PuzzleGame;
+			sourceTree = "<group>";
+		};
+		3A2CFAE92031ABA900977362 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				3AE49C162047E0AF0038BB56 /* InAppPurchase */,
+				3AA6367F203D70AD00DF6B08 /* PuzzleManagers */,
+				3A2CFAEA2031AC3500977362 /* ConnectionManager.swift */,
+				3A2CFAEE2031AECE00977362 /* JSONParser.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		3A59A6E020341DED009BF343 /* StepSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A6E120341DED009BF343 /* LICENSE */,
+				3A59A6E220341DED009BF343 /* README.md */,
+				3A59A6E320341DED009BF343 /* StepSlider */,
+			);
+			path = StepSlider;
+			sourceTree = "<group>";
+		};
+		3A59A6E320341DED009BF343 /* StepSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A6E420341DED009BF343 /* source */,
+			);
+			path = StepSlider;
+			sourceTree = "<group>";
+		};
+		3A59A6E420341DED009BF343 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A6E520341DED009BF343 /* StepSlider */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		3A59A6E520341DED009BF343 /* StepSlider */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A6E620341DED009BF343 /* StepSlider.m */,
+				3A59A6E720341DED009BF343 /* StepSlider.h */,
+			);
+			path = StepSlider;
+			sourceTree = "<group>";
+		};
+		3A72F009203FF0C1002B1972 /* MyPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3A72F00A203FF0C9002B1972 /* MyPuzzleViewController.swift */,
+				3AA7CDFC204E870C009631D9 /* MyPuzzleViewController.storyboard */,
+			);
+			path = MyPuzzle;
+			sourceTree = "<group>";
+		};
+		3A72F00E203FF3D8002B1972 /* MyPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3A72F00F203FF3E7002B1972 /* MyPuzzleCollectionViewCell.swift */,
+				3A72F010203FF3E7002B1972 /* MyPuzzleCollectionViewCell.xib */,
+			);
+			path = MyPuzzle;
+			sourceTree = "<group>";
+		};
+		3AA4A904202C94AC008CFD48 = {
+			isa = PBXGroup;
+			children = (
+				3AA4A90F202C94AC008CFD48 /* JigsawPuzzle */,
+				3AA4A90E202C94AC008CFD48 /* Products */,
+				B1BF02F1030E9C6ADFCE7F9E /* Pods */,
+				1711A44D5962A20943237085 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3AA4A90E202C94AC008CFD48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3AA4A90D202C94AC008CFD48 /* JigsawPuzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3AA4A90F202C94AC008CFD48 /* JigsawPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				408A304A2056703E00CAFEC1 /* GoogleService-Info.plist */,
+				3A387EAF20501B1C002134E7 /* Info.plist */,
+				3A04CAF92045C98D0033C54A /* JigsawPuzzle.entitlements */,
+				3AA4A92D202C952B008CFD48 /* Cells */,
+				3AA4A92C202C952B008CFD48 /* Models */,
+				3AA4A92A202C952B008CFD48 /* Support */,
+				3AA4A92B202C952B008CFD48 /* ViewControllers */,
+				3AA4A934202C95F8008CFD48 /* Extensions */,
+				3A2CFAE92031ABA900977362 /* Managers */,
+				3A59A6EE20341EA8009BF343 /* JigsawPuzzle-Bridging-Header.h */,
+				40B35BC620592D7A00DF826A /* Privacy Policy.pdf */,
+				40B35BC820592D8000DF826A /* Terms of Use.pdf */,
+			);
+			path = JigsawPuzzle;
+			sourceTree = "<group>";
+		};
+		3AA4A92A202C952B008CFD48 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				3A59A6E020341DED009BF343 /* StepSlider */,
+				3AA4A933202C95CF008CFD48 /* UIHelpers */,
+				3AECA916202DB91400E505B2 /* SFUIDisplay */,
+				3AA4A917202C94AC008CFD48 /* Assets.xcassets */,
+				3AA4A919202C94AC008CFD48 /* LaunchScreen.storyboard */,
+				3AA4A910202C94AC008CFD48 /* AppDelegate.swift */,
+				3A1E1A2120468E2A00FA6F4F /* Localizable.strings */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		3AA4A92B202C952B008CFD48 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5B0022046CED9001C53C6 /* Web */,
+				3A04CAF42045C3820033C54A /* ProScreen */,
+				3A72F009203FF0C1002B1972 /* MyPuzzle */,
+				3AB2B8F320371A39003B2007 /* EndPuzzle */,
+				3A2358F7203193D2002FC293 /* PuzzleGame */,
+				3AECA930202DC61600E505B2 /* DetailsPuzzle */,
+				3AECA902202D7DF600E505B2 /* Main */,
+				3AA4A92E202C957A008CFD48 /* SplashScreen */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3AA4A92C202C952B008CFD48 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3AA4A935202C992A008CFD48 /* ApplicationModel.swift */,
+				3A2CFAF02031AF4800977362 /* Pictures.swift */,
+				3A0558E8204A83720054CA19 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3AA4A92D202C952B008CFD48 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3A72F00E203FF3D8002B1972 /* MyPuzzle */,
+				3AB2B8EE2036F961003B2007 /* Element */,
+				3AECA929202DBCAD00E505B2 /* Puzzle */,
+				3AECA90D202D983300E505B2 /* CategoriesPuzzle */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		3AA4A92E202C957A008CFD48 /* SplashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3A387EBA205021DB002134E7 /* SplashScreenViewController.storyboard */,
+				3AA4A92F202C9587008CFD48 /* SplashScreenViewController.swift */,
+			);
+			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		3AA4A933202C95CF008CFD48 /* UIHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA92E202DBD7200E505B2 /* ATView.swift */,
+				3AECA937202DC84E00E505B2 /* ATButton.swift */,
+			);
+			path = UIHelpers;
+			sourceTree = "<group>";
+		};
+		3AA4A934202C95F8008CFD48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA907202D7F5200E505B2 /* UIViewController+Storyboard.swift */,
+				3AECA914202DA25800E505B2 /* UIViewController+UIAlertController.swift */,
+				3AECA935202DC71C00E505B2 /* UIViewController+BackButton.swift */,
+				3AECA909202D81AC00E505B2 /* UIApplication+StatusBar.swift */,
+				3AECA90B202D82F100E505B2 /* UIColor.swift */,
+				3AECA912202D9FF100E505B2 /* Int+String.swift */,
+				3AEC9AEB2033004C00F7D40B /* UIImage + Size.swift */,
+				3A59A6F4203425EC009BF343 /* Array + RandomSort.swift */,
+				3A0558EA204A8FB30054CA19 /* UIApplication+TopViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3AA6367F203D70AD00DF6B08 /* PuzzleManagers */ = {
+			isa = PBXGroup;
+			children = (
+				3A5E98702036DAC300739A7D /* PuzzleManager.swift */,
+				3ACF54D9203D6C0100E32151 /* PuzzleItemPosition.swift */,
+				3AA63680203D70C100DF6B08 /* PuzzleStateManager.swift */,
+			);
+			path = PuzzleManagers;
+			sourceTree = "<group>";
+		};
+		3AB2B8EE2036F961003B2007 /* Element */ = {
+			isa = PBXGroup;
+			children = (
+				3AB2B8EF2036F977003B2007 /* ElementCollectionViewCell.swift */,
+				3AB2B8F12036FB95003B2007 /* ElementCollectionViewCell.xib */,
+			);
+			path = Element;
+			sourceTree = "<group>";
+		};
+		3AB2B8F320371A39003B2007 /* EndPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3AB2B8F420371A48003B2007 /* EndPuzzleViewController.swift */,
+				3AA7CDEF204E86F1009631D9 /* EndPuzzleViewController.storyboard */,
+			);
+			path = EndPuzzle;
+			sourceTree = "<group>";
+		};
+		3AD5B0022046CED9001C53C6 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				3AD5B0032046CEE1001C53C6 /* WebViewController.swift */,
+				3AD5B0052046CEE9001C53C6 /* WebViewController.storyboard */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		3AE49C162047E0AF0038BB56 /* InAppPurchase */ = {
+			isa = PBXGroup;
+			children = (
+				3AE49C182047E0BD0038BB56 /* IAPHelper.swift */,
+				3AE49C172047E0BD0038BB56 /* RageProducts.swift */,
+			);
+			path = InAppPurchase;
+			sourceTree = "<group>";
+		};
+		3AECA902202D7DF600E505B2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA903202D7DFF00E505B2 /* MainViewController.swift */,
+				3AECA905202D7E3000E505B2 /* MainViewController.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		3AECA90D202D983300E505B2 /* CategoriesPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA90E202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift */,
+				3AECA90F202D984300E505B2 /* CategoriesPuzzleTableViewCell.xib */,
+			);
+			path = CategoriesPuzzle;
+			sourceTree = "<group>";
+		};
+		3AECA916202DB91400E505B2 /* SFUIDisplay */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA917202DB91400E505B2 /* SFUIDisplay-Semibold.otf */,
+				3AECA918202DB91400E505B2 /* SFUIDisplay-Light.otf */,
+				3AECA919202DB91400E505B2 /* SFUIDisplay-Regular.otf */,
+				3AECA91A202DB91400E505B2 /* SFUIDisplay-Heavy.otf */,
+				3AECA91B202DB91400E505B2 /* SFUIDisplay-Thin.otf */,
+				3AECA91C202DB91400E505B2 /* SFUIDisplay-Medium.otf */,
+				3AECA91D202DB91400E505B2 /* SFUIDisplay-Black.otf */,
+				3AECA91E202DB91400E505B2 /* SFUIDisplay-Ultralight.otf */,
+				3AECA91F202DB91400E505B2 /* SFUIDisplay-Bold.otf */,
+			);
+			path = SFUIDisplay;
+			sourceTree = "<group>";
+		};
+		3AECA929202DBCAD00E505B2 /* Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA92A202DBCBD00E505B2 /* PuzzleCollectionViewCell.swift */,
+				3AECA92B202DBCBD00E505B2 /* PuzzleCollectionViewCell.xib */,
+			);
+			path = Puzzle;
+			sourceTree = "<group>";
+		};
+		3AECA930202DC61600E505B2 /* DetailsPuzzle */ = {
+			isa = PBXGroup;
+			children = (
+				3AECA931202DC62400E505B2 /* DetailsPuzzleViewController.swift */,
+				3AA7CDE2204E86D6009631D9 /* DetailsPuzzleViewController.storyboard */,
+			);
+			path = DetailsPuzzle;
+			sourceTree = "<group>";
+		};
+		B1BF02F1030E9C6ADFCE7F9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F27B8161D8CEDDC1CFED1BE1 /* Pods-JigsawPuzzle.debug.xcconfig */,
+				2C60AA29C2534D4FA1112064 /* Pods-JigsawPuzzle.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AA4A90C202C94AC008CFD48 /* JigsawPuzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3AA4A91F202C94AC008CFD48 /* Build configuration list for PBXNativeTarget "JigsawPuzzle" */;
+			buildPhases = (
+				21FCE85F854559AEDC4E0AA9 /* [CP] Check Pods Manifest.lock */,
+				3AA4A909202C94AC008CFD48 /* Sources */,
+				3AA4A90A202C94AC008CFD48 /* Frameworks */,
+				3AA4A90B202C94AC008CFD48 /* Resources */,
+				6444D57FA19BFB173625251D /* [CP] Embed Pods Frameworks */,
+				6CCA1E03C585A4D0481E3223 /* [CP] Copy Pods Resources */,
+				3AC4B8B720492F5500B04C58 /* ShellScript */,
+				3A0558E7204A7DA00054CA19 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JigsawPuzzle;
+			productName = JigsawPuzzle;
+			productReference = 3AA4A90D202C94AC008CFD48 /* JigsawPuzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3AA4A905202C94AC008CFD48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Elatesoftware;
+				TargetAttributes = {
+					3AA4A90C202C94AC008CFD48 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3AA4A908202C94AC008CFD48 /* Build configuration list for PBXProject "JigsawPuzzle" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+				es,
+				"pt-PT",
+				de,
+				ja,
+			);
+			mainGroup = 3AA4A904202C94AC008CFD48;
+			productRefGroup = 3AA4A90E202C94AC008CFD48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3AA4A90C202C94AC008CFD48 /* JigsawPuzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3AA4A90B202C94AC008CFD48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A59A6EF20341ECE009BF343 /* JigsawPuzzle-Bridging-Header.h in Resources */,
+				3AECA927202DB91400E505B2 /* SFUIDisplay-Ultralight.otf in Resources */,
+				3AA7CE07204E8720009631D9 /* ProScreenViewController.storyboard in Resources */,
+				3AECA920202DB91400E505B2 /* SFUIDisplay-Semibold.otf in Resources */,
+				408A304B2056703E00CAFEC1 /* GoogleService-Info.plist in Resources */,
+				3A1E1A1F20468E2A00FA6F4F /* Localizable.strings in Resources */,
+				3AECA906202D7E3000E505B2 /* MainViewController.storyboard in Resources */,
+				3AECA922202DB91400E505B2 /* SFUIDisplay-Regular.otf in Resources */,
+				3AA7CDED204E86F1009631D9 /* EndPuzzleViewController.storyboard in Resources */,
+				3AECA92D202DBCBD00E505B2 /* PuzzleCollectionViewCell.xib in Resources */,
+				3AA7CDFA204E870C009631D9 /* MyPuzzleViewController.storyboard in Resources */,
+				3A59A6E820341DEE009BF343 /* LICENSE in Resources */,
+				40B35BC720592D7A00DF826A /* Privacy Policy.pdf in Resources */,
+				3AD5B0062046CEE9001C53C6 /* WebViewController.storyboard in Resources */,
+				3AECA924202DB91400E505B2 /* SFUIDisplay-Thin.otf in Resources */,
+				3AA4A91B202C94AC008CFD48 /* LaunchScreen.storyboard in Resources */,
+				3A387EB020501B1C002134E7 /* Info.plist in Resources */,
+				3AECA911202D984300E505B2 /* CategoriesPuzzleTableViewCell.xib in Resources */,
+				3AECA928202DB91400E505B2 /* SFUIDisplay-Bold.otf in Resources */,
+				3AECA926202DB91400E505B2 /* SFUIDisplay-Black.otf in Resources */,
+				3AA4A918202C94AC008CFD48 /* Assets.xcassets in Resources */,
+				40B35BC920592D8000DF826A /* Terms of Use.pdf in Resources */,
+				3A59A6E920341DEE009BF343 /* README.md in Resources */,
+				3AA7CDE0204E86D6009631D9 /* DetailsPuzzleViewController.storyboard in Resources */,
+				3AB2B8F22036FB95003B2007 /* ElementCollectionViewCell.xib in Resources */,
+				3AECA923202DB91400E505B2 /* SFUIDisplay-Heavy.otf in Resources */,
+				3AECA925202DB91400E505B2 /* SFUIDisplay-Medium.otf in Resources */,
+				3A2358FB203193E1002FC293 /* PuzzleGameViewController.storyboard in Resources */,
+				3A72F012203FF3E7002B1972 /* MyPuzzleCollectionViewCell.xib in Resources */,
+				3AECA921202DB91400E505B2 /* SFUIDisplay-Light.otf in Resources */,
+				3A387EB8205021DB002134E7 /* SplashScreenViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21FCE85F854559AEDC4E0AA9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JigsawPuzzle-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3A0558E7204A7DA00054CA19 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+		3AC4B8B720492F5500B04C58 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0d62fd832175b125cd9565f96c91ccb9679a5ec2 2d2bce6d84b89b6e2160904b2cb4c5d9dfeea20b43bc641cf183b0ae1dfc7ff4";
+		};
+		6444D57FA19BFB173625251D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-JigsawPuzzle/Pods-JigsawPuzzle-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/PuzzleMaker/PuzzleMaker.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PuzzleMaker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JigsawPuzzle/Pods-JigsawPuzzle-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6CCA1E03C585A4D0481E3223 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JigsawPuzzle/Pods-JigsawPuzzle-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3AA4A909202C94AC008CFD48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AE49C192047E0BD0038BB56 /* RageProducts.swift in Sources */,
+				3A2CFAF12031AF4800977362 /* Pictures.swift in Sources */,
+				3AECA90A202D81AC00E505B2 /* UIApplication+StatusBar.swift in Sources */,
+				3AECA910202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift in Sources */,
+				3A2CFAEF2031AECE00977362 /* JSONParser.swift in Sources */,
+				3A72F011203FF3E7002B1972 /* MyPuzzleCollectionViewCell.swift in Sources */,
+				3AECA90C202D82F100E505B2 /* UIColor.swift in Sources */,
+				3AECA913202D9FF100E505B2 /* Int+String.swift in Sources */,
+				3AEC9AEC2033004C00F7D40B /* UIImage + Size.swift in Sources */,
+				3AA4A936202C992A008CFD48 /* ApplicationModel.swift in Sources */,
+				3A0558EB204A8FB30054CA19 /* UIApplication+TopViewController.swift in Sources */,
+				3AA4A930202C9587008CFD48 /* SplashScreenViewController.swift in Sources */,
+				3ACF54DA203D6C0100E32151 /* PuzzleItemPosition.swift in Sources */,
+				3AECA92C202DBCBD00E505B2 /* PuzzleCollectionViewCell.swift in Sources */,
+				3AECA92F202DBD7200E505B2 /* ATView.swift in Sources */,
+				3AA4A911202C94AC008CFD48 /* AppDelegate.swift in Sources */,
+				3AA63681203D70C100DF6B08 /* PuzzleStateManager.swift in Sources */,
+				3AECA915202DA25800E505B2 /* UIViewController+UIAlertController.swift in Sources */,
+				3AECA908202D7F5200E505B2 /* UIViewController+Storyboard.swift in Sources */,
+				3AECA936202DC71C00E505B2 /* UIViewController+BackButton.swift in Sources */,
+				3A2CFAEB2031AC3500977362 /* ConnectionManager.swift in Sources */,
+				3A72F00B203FF0C9002B1972 /* MyPuzzleViewController.swift in Sources */,
+				3A2358F9203193DA002FC293 /* PuzzleGameViewController.swift in Sources */,
+				3AE49C1A2047E0BD0038BB56 /* IAPHelper.swift in Sources */,
+				3A5E98712036DAC300739A7D /* PuzzleManager.swift in Sources */,
+				3A0558E9204A83720054CA19 /* User.swift in Sources */,
+				3AECA938202DC84E00E505B2 /* ATButton.swift in Sources */,
+				3AB2B8F02036F977003B2007 /* ElementCollectionViewCell.swift in Sources */,
+				3AECA904202D7DFF00E505B2 /* MainViewController.swift in Sources */,
+				3AECA932202DC62400E505B2 /* DetailsPuzzleViewController.swift in Sources */,
+				3A04CAF62045C38F0033C54A /* ProScreenViewController.swift in Sources */,
+				3A59A6F5203425EC009BF343 /* Array + RandomSort.swift in Sources */,
+				3AD5B0042046CEE1001C53C6 /* WebViewController.swift in Sources */,
+				3A59A6EA20341DEE009BF343 /* StepSlider.m in Sources */,
+				3AB2B8F520371A48003B2007 /* EndPuzzleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3A1E1A2120468E2A00FA6F4F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A1E1A2020468E2A00FA6F4F /* en */,
+				3A1E1A2220468E2C00FA6F4F /* ru */,
+				3A1E1A2320468E2D00FA6F4F /* es */,
+				3A1E1A2420468E2D00FA6F4F /* pt-PT */,
+				3A1E1A2520468E3200FA6F4F /* de */,
+				3A1E1A2620468E3300FA6F4F /* ja */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3A387EBA205021DB002134E7 /* SplashScreenViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A387EBC205021DE002134E7 /* en */,
+				3A387EBD20502330002134E7 /* Base */,
+				3A387EBF205023A8002134E7 /* es */,
+				3A387EC1205023A9002134E7 /* pt-PT */,
+				3A387EC3205023AA002134E7 /* de */,
+				3A387EC5205023AA002134E7 /* ja */,
+			);
+			name = SplashScreenViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA4A919202C94AC008CFD48 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA4A91A202C94AC008CFD48 /* Base */,
+				3A1E1A1820468DA700FA6F4F /* ru */,
+				3A1E1A1920468DB600FA6F4F /* es */,
+				3A1E1A1A20468DE500FA6F4F /* pt-PT */,
+				3A1E1A1B20468DF100FA6F4F /* de */,
+				3A1E1A1C20468DFE00FA6F4F /* ja */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA7CDE2204E86D6009631D9 /* DetailsPuzzleViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA7CDE4204E86D9009631D9 /* en */,
+				3AA7CDE6204E86DA009631D9 /* pt-PT */,
+				3AA7CDE8204E86DB009631D9 /* es */,
+				3AA7CDEA204E86DC009631D9 /* de */,
+				3AA7CDEC204E86DC009631D9 /* ja */,
+				3A387EC620502419002134E7 /* Base */,
+			);
+			name = DetailsPuzzleViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA7CDEF204E86F1009631D9 /* EndPuzzleViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA7CDF1204E86F3009631D9 /* en */,
+				3AA7CDF3204E86F4009631D9 /* es */,
+				3AA7CDF5204E86F5009631D9 /* pt-PT */,
+				3AA7CDF7204E86F6009631D9 /* de */,
+				3AA7CDF9204E86F7009631D9 /* ja */,
+				3A387EC72050243A002134E7 /* Base */,
+			);
+			name = EndPuzzleViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA7CDFC204E870C009631D9 /* MyPuzzleViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA7CDFE204E870E009631D9 /* en */,
+				3AA7CE00204E870F009631D9 /* es */,
+				3AA7CE02204E8710009631D9 /* pt-PT */,
+				3AA7CE04204E8711009631D9 /* de */,
+				3AA7CE06204E8712009631D9 /* ja */,
+				3A387EC820502449002134E7 /* Base */,
+			);
+			name = MyPuzzleViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		3AA7CE09204E8720009631D9 /* ProScreenViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3AA7CE0D204E8724009631D9 /* es */,
+				3AA7CE0F204E8725009631D9 /* pt-PT */,
+				3AA7CE11204E8726009631D9 /* de */,
+				3AA7CE13204E8727009631D9 /* ja */,
+				3A387EC9205025B8002134E7 /* Base */,
+				3A387ECB205025CB002134E7 /* en */,
+			);
+			name = ProScreenViewController.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3AA4A91D202C94AC008CFD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3AA4A91E202C94AC008CFD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3AA4A920202C94AC008CFD48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F27B8161D8CEDDC1CFED1BE1 /* Pods-JigsawPuzzle.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JigsawPuzzle/JigsawPuzzle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 54CCMR2625;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JigsawPuzzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puzzle.JigsawPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3AA4A921202C94AC008CFD48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C60AA29C2534D4FA1112064 /* Pods-JigsawPuzzle.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = JigsawPuzzle/JigsawPuzzle.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 54CCMR2625;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = JigsawPuzzle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.puzzle.JigsawPuzzle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3AA4A908202C94AC008CFD48 /* Build configuration list for PBXProject "JigsawPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA4A91D202C94AC008CFD48 /* Debug */,
+				3AA4A91E202C94AC008CFD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3AA4A91F202C94AC008CFD48 /* Build configuration list for PBXNativeTarget "JigsawPuzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA4A920202C94AC008CFD48 /* Debug */,
+				3AA4A921202C94AC008CFD48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3AA4A905202C94AC008CFD48 /* Project object */;
+}

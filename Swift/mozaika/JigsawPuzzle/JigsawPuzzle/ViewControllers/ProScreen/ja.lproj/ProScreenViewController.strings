@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Access to all updates\n\n"; ObjectID = "AuF-9k-Rw4"; */
+"AuF-9k-Rw4.text" = "すべてのアップデートにアクセス\n\n";
+
+/* Class = "UILabel"; text = "Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period. Free trial will be automatically converted into 1-week Subscription at 7.99$/1week. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription, where applicable."; ObjectID = "HZn-Qn-SLY"; */
+"HZn-Qn-SLY.text" = "現行期間が終了する少なくとも24時間前までに自動更新をオフにしない限り、サブスクリプションは自動的に更新されます。現行期間が終了する24時間以内に更新料がアカウントに課金されます。無料トライアルは自動的に、7.99$/週の1週間サブスクリプションに変換されます。サブスクリプションはユーザーにより管理可能で、購入後、ユーザーのアカウント設定から自動更新をオフにすることが出来ます。無料トライアル期間が提供されている場合、その未使用部分は、ユーザーがサブスクリプションを購入した時に喪失します。";
+
+/* Class = "UILabel"; text = "3 DAYS"; ObjectID = "ID1-g5-5dE"; */
+"ID1-g5-5dE.text" = "3日間";
+
+/* Class = "UILabel"; text = "FREE TRIAL"; ObjectID = "MZd-Iz-2On"; */
+"MZd-Iz-2On.text" = "無料トライアル";
+
+/* Class = "UILabel"; text = "Access to all puzzles"; ObjectID = "MpL-E0-evP"; */
+"MpL-E0-evP.text" = "すべてのパズルにアクセス";
+
+/* Class = "UILabel"; text = "then 7,99$/week"; ObjectID = "bSt-kK-8YC"; */
+"bSt-kK-8YC.text" = "その後、7,99$/週 ";
+
+/* Class = "UIButton"; normalTitle = "Restore purchases"; ObjectID = "szf-eX-eBC"; */
+"szf-eX-eBC.normalTitle" = "購入を復元";
+
+/* Class = "UIButton"; normalTitle = "ACTIVATE PLAN"; ObjectID = "zkv-VE-PBN"; */
+"zkv-VE-PBN.normalTitle" = "プランのアクティベーション";

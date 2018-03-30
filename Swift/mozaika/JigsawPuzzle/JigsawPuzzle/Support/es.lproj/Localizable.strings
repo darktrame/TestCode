@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  JigsawPuzzle
+
+  Created by Elatesoftware on 28.02.2018.
+  Copyright © 2018 Elatesoftware. All rights reserved.
+*/
+
+"PushBodyText" = "Hemos agregado rompecabezas gratis para que los disfrutes.";
+"PushTitle" = "Your Jigsaw Puzzles";
+
+"Animals" = "Animales";
+"Flowers" = "Flores";
+"Sights" = "Edificios";
+"Art" = "Art";
+"Food" = "Comida";
+"Landscapes" = "Paisajes";
+"Transport" = "Transporte";
+"Sport" = "Deportes";
+"Holidays" = "Vacaciones";
+"Other" = "Otro";
+"myPuzzle" = "Mis rompecabezas";
+"purchaseRestored" = "Su compra se restauró con éxito";
+"termOfUse" = "Términos de Uso";
+"privacyPolicy" = "Política de privacidad";
+"confirmRemove" = "Confirmar la eliminación";
+"countPuzzle" = "Numero de piezas";
+"gallery" = "Galería";
+"removeMessage" = "¿Seguro que desea eliminar este elemento de su colección?";
+"cancel" = "Cancelar";
+"remove" = "Borrar";

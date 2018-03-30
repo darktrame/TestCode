@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Поделиться"; ObjectID = "2hb-VG-2xy"; */
+"2hb-VG-2xy.normalTitle" = "Compartilhar";
+
+/* Class = "UILabel"; text = "Пазл собран!"; ObjectID = "Ikc-CB-ikr"; */
+"Ikc-CB-ikr.text" = "O enigma está completo";
+
+/* Class = "UIButton"; normalTitle = "Готово"; ObjectID = "ndW-Sr-C2u"; */
+"ndW-Sr-C2u.normalTitle" = "Feito";

@@ -1,0 +1,6 @@
+
+/* Class = "UIButton"; normalTitle = "Переподключиться"; ObjectID = "P9M-mo-gnr"; */
+"P9M-mo-gnr.normalTitle" = "再接続 ";
+
+/* Class = "UILabel"; text = "Произошла ошибка подключения к серверу... :("; ObjectID = "xEs-qG-KWF"; */
+"xEs-qG-KWF.text" = "サーバーへの接続中にエラーが発生しました... :( ";

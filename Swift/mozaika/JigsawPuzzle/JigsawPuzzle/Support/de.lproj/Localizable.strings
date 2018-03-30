@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  JigsawPuzzle
+
+  Created by Elatesoftware on 28.02.2018.
+  Copyright © 2018 Elatesoftware. All rights reserved.
+*/
+
+"PushBodyText" = "Wir haben gerade kostenloses Puzzle für dich ergänzt";
+"PushTitle" = "Your Jigsaw Puzzles";
+
+"Animals" = "Tiere";
+"Flowers" = "Blumen";
+"Sights" = "Gebäude";
+"Art" = "Kunst";
+"Food" = "Essen";
+"Landscapes" = "Landschaften";
+"Transport" = "Transport";
+"Sport" = "Sport";
+"Holidays" = "Ferien";
+"Other" = "Andere";
+"myPuzzle" = "Meine Puzzles";
+"purchaseRestored" = "Dein Kauf wurde erfolgreich wiederhergestellt";
+"termOfUse" = "Nutzungsbedingungen";
+"privacyPolicy" = "Datenschutz-Bestimmungen";
+"confirmRemove" = "Löschen bestätigen";
+"countPuzzle" = "Anzahl der Teile";
+"gallery" = "Galerie";
+"removeMessage" = "Willst du dieses Produkt wirklich aus deiner Sammlung entfernen?";
+"cancel" = "Stornieren";
+"remove" = "Löschen";

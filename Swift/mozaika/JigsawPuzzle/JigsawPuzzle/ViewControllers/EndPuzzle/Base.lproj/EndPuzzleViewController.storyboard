@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MYa-MK-eaS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--End Puzzle View Controller-->
+        <scene sceneID="hce-gD-Rah">
+            <objects>
+                <viewController id="MYa-MK-eaS" customClass="EndPuzzleViewController" customModule="JigsawPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OIw-Af-8P6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endPuzzleBackground" translatesAutoresizingMaskIntoConstraints="NO" id="6JS-VD-OIH">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пазл собран!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikc-CB-ikr">
+                                <rect key="frame" x="89.5" y="82" width="196.5" height="39.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="33"/>
+                                <color key="textColor" red="0.35686274509803922" green="0.18823529411764706" blue="0.55294117647058827" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cup" translatesAutoresizingMaskIntoConstraints="NO" id="Phy-Tr-N08">
+                                <rect key="frame" x="87" y="171.5" width="200" height="252"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Phy-Tr-N08" secondAttribute="height" multiplier="50:63" id="3Nc-3D-vob"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hb-VG-2xy" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="76.5" y="539" width="221" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="221" id="DKH-YQ-C3h"/>
+                                    <constraint firstAttribute="height" constant="44" id="bib-YN-cH7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="23"/>
+                                <state key="normal" title="Поделиться">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35686274509803922" green="0.18823529411764706" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="border" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="shareButtonAction:" destination="MYa-MK-eaS" eventType="touchUpInside" id="J40-5y-Zik"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndW-Sr-C2u" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="76.5" y="589" width="221" height="44"/>
+                                <color key="backgroundColor" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1EX-aL-m8Z"/>
+                                    <constraint firstAttribute="width" constant="221" id="Yut-XY-L8P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="23"/>
+                                <state key="normal" title="Готово">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="7"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="endButtonAction:" destination="MYa-MK-eaS" eventType="touchUpInside" id="57L-9e-gwq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Phy-Tr-N08" firstAttribute="top" secondItem="Ikc-CB-ikr" secondAttribute="bottom" constant="50" id="1R5-Ii-SmR"/>
+                            <constraint firstItem="ndW-Sr-C2u" firstAttribute="top" secondItem="2hb-VG-2xy" secondAttribute="bottom" constant="6" id="5ae-83-o95"/>
+                            <constraint firstItem="Ikc-CB-ikr" firstAttribute="top" secondItem="vGn-Oe-joa" secondAttribute="top" constant="62" id="KDv-tY-s6U"/>
+                            <constraint firstItem="Ikc-CB-ikr" firstAttribute="centerX" secondItem="6JS-VD-OIH" secondAttribute="centerX" id="QtK-oq-T2K"/>
+                            <constraint firstItem="2hb-VG-2xy" firstAttribute="centerX" secondItem="Phy-Tr-N08" secondAttribute="centerX" id="XCC-zL-Kd4"/>
+                            <constraint firstItem="vGn-Oe-joa" firstAttribute="trailing" secondItem="6JS-VD-OIH" secondAttribute="trailing" id="XPn-MC-IPA"/>
+                            <constraint firstItem="6JS-VD-OIH" firstAttribute="leading" secondItem="vGn-Oe-joa" secondAttribute="leading" id="XZj-Uy-a9t"/>
+                            <constraint firstItem="Phy-Tr-N08" firstAttribute="centerX" secondItem="Ikc-CB-ikr" secondAttribute="centerX" id="kQu-3I-ZL3"/>
+                            <constraint firstItem="ndW-Sr-C2u" firstAttribute="centerX" secondItem="2hb-VG-2xy" secondAttribute="centerX" id="ppq-mN-jhY"/>
+                            <constraint firstItem="vGn-Oe-joa" firstAttribute="bottom" secondItem="6JS-VD-OIH" secondAttribute="bottom" id="vyW-mY-6Tc"/>
+                            <constraint firstItem="vGn-Oe-joa" firstAttribute="bottom" secondItem="ndW-Sr-C2u" secondAttribute="bottom" constant="34" id="x5A-BB-EYB"/>
+                            <constraint firstItem="6JS-VD-OIH" firstAttribute="top" secondItem="vGn-Oe-joa" secondAttribute="top" id="xsy-EO-SXQ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vGn-Oe-joa"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbl-gL-Qow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="760.79999999999995" y="20.239880059970016"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cup" width="200" height="252"/>
+        <image name="endPuzzleBackground" width="375" height="666"/>
+    </resources>
+</document>

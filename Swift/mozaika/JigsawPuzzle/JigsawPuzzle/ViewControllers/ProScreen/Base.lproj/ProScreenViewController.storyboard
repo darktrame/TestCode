@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bp0-Yd-0nk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pro Screen View Controller-->
+        <scene sceneID="xUV-s4-aLl">
+            <objects>
+                <viewController id="ehM-UY-Ki9" customClass="ProScreenViewController" customModule="JigsawPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h7D-2f-VaX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pro_background" translatesAutoresizingMaskIntoConstraints="NO" id="vbf-cS-UVn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pro_name" translatesAutoresizingMaskIntoConstraints="NO" id="eb1-7i-nY2">
+                                <rect key="frame" x="48" y="110" width="279" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Fwe-sP-qO4"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pro_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5xv-kj-Atb">
+                                <rect key="frame" x="133" y="153" width="109" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5xv-kj-Atb" secondAttribute="height" multiplier="65:53" id="dbz-aG-lY5"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szf-eX-eBC">
+                                <rect key="frame" x="107.5" y="421.5" width="160" height="57.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="Восстановить покупки">
+                                    <color key="titleColor" red="0.40000000000000002" green="0.1764705882352941" blue="0.56862745098039214" alpha="0.88" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restorePurchasesButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="o1x-6E-hf4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="HZn-Qn-SLY">
+                                <rect key="frame" x="22" y="555" width="337" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5Jc-vI-oWd"/>
+                                </constraints>
+                                <string key="text">Оплата с аккаунта iTunes будет совершена только после подтверждения покупки. Подписка автоматически возобновится, если не отменить подписку раньше, чем за 24 часа до даты возобновления. Оплата за возобновление подписки произойдет в течение 24 часов до окончания текущего периода.  Бесплатная пробная версия будет автоматически конвертирована в 1-недельную подписку в 7,99 $ / за 1 неделю.  Возможно управление подписками. Отключить автоматическое обновление подписки можно в настройках вашего аккаунта iTunes. Любая неиспользованная часть бесплатного пробного периода будет аннулирована, если пользователь приобретет подписку(в случаях, когда это применимо). </string>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="25"/>
+                                <color key="textColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wj-cw-4Aq" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="120" y="643" width="50" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="U3u-NB-gCj"/>
+                                </constraints>
+                                <state key="normal" image="termOfUse">
+                                    <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentFileButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="Uuq-ZU-WjB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M85-hk-9SO" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="203" y="643" width="55" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Q2B-fg-OZx"/>
+                                </constraints>
+                                <state key="normal" image="privacyPolicy">
+                                    <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="presentFileButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="JjW-mT-Jyw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zkv-VE-PBN" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="56.5" y="495" width="262" height="44"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.1764705882" blue="0.56862745100000001" alpha="0.88" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5RU-0n-zvz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="НАЧАТЬ СЕЙЧАС!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buy:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="yic-5J-b1k"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="tHp-Se-A2W">
+                                <rect key="frame" x="106" y="268" width="163" height="33.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Разблокируйте все пазлы" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpL-E0-evP">
+                                        <rect key="frame" x="0.0" y="0.0" width="163" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="5Jl-Ue-mbf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Доступ ко всем обновлениям" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuF-9k-Rw4">
+                                        <rect key="frame" x="0.0" y="19" width="163" height="14.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="12"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33.5" id="4KS-WZ-bN6"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Br-Il-PLp" customClass="ATView" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="56.5" y="309.5" width="262" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРОБНЫЙ ПЕРИОД" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="MZd-Iz-2On">
+                                        <rect key="frame" x="8.5" y="4" width="245.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="25"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.1764705882" blue="0.56862745100000001" alpha="0.88" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 ДНЯ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ID1-g5-5dE">
+                                        <rect key="frame" x="107" y="39" width="47.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="затем 7,99$/нед." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSt-kK-8YC">
+                                        <rect key="frame" x="91.5" y="76" width="79.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="10"/>
+                                        <color key="textColor" white="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.9882352941176471" green="0.99215686274509807" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bSt-kK-8YC" secondAttribute="bottom" constant="8" id="3zO-Gm-ShF"/>
+                                    <constraint firstAttribute="trailing" secondItem="MZd-Iz-2On" secondAttribute="trailing" constant="8" id="7TX-FW-bZN"/>
+                                    <constraint firstItem="bSt-kK-8YC" firstAttribute="centerX" secondItem="ID1-g5-5dE" secondAttribute="centerX" id="MVi-sR-j9V"/>
+                                    <constraint firstItem="MZd-Iz-2On" firstAttribute="leading" secondItem="8Br-Il-PLp" secondAttribute="leading" constant="8" id="T6u-ip-dOu"/>
+                                    <constraint firstItem="ID1-g5-5dE" firstAttribute="centerX" secondItem="8Br-Il-PLp" secondAttribute="centerX" id="Xbd-vT-8Mb"/>
+                                    <constraint firstAttribute="height" constant="96" id="l0f-dl-gW3"/>
+                                    <constraint firstItem="ID1-g5-5dE" firstAttribute="centerY" secondItem="8Br-Il-PLp" secondAttribute="centerY" id="m1f-Ca-axb"/>
+                                    <constraint firstItem="MZd-Iz-2On" firstAttribute="top" secondItem="8Br-Il-PLp" secondAttribute="top" constant="4" id="zjN-P7-czv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0m-u8-x1F">
+                                <rect key="frame" x="331" y="72" width="36" height="36"/>
+                                <color key="backgroundColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="8gB-Ju-x4p"/>
+                                    <constraint firstAttribute="width" constant="36" id="bUK-VT-xJ4"/>
+                                </constraints>
+                                <state key="normal" image="pro_close"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="K1b-8s-wHf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tHp-Se-A2W" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="0xa-Zs-eX8"/>
+                            <constraint firstItem="szf-eX-eBC" firstAttribute="centerX" secondItem="h7D-2f-VaX" secondAttribute="centerX" id="2SY-yx-nwr"/>
+                            <constraint firstItem="M85-hk-9SO" firstAttribute="bottom" secondItem="2wj-cw-4Aq" secondAttribute="bottom" id="4yt-tM-UVr"/>
+                            <constraint firstItem="zkv-VE-PBN" firstAttribute="centerX" secondItem="h7D-2f-VaX" secondAttribute="centerX" id="6Hy-GD-E39"/>
+                            <constraint firstItem="8Br-Il-PLp" firstAttribute="centerY" secondItem="h7D-2f-VaX" secondAttribute="centerY" constant="24" id="7qj-Ko-B4S"/>
+                            <constraint firstItem="8Br-Il-PLp" firstAttribute="width" secondItem="h7D-2f-VaX" secondAttribute="width" multiplier="0.7" id="8dV-8y-85V"/>
+                            <constraint firstItem="vbf-cS-UVn" firstAttribute="bottom" secondItem="ffH-OH-fBy" secondAttribute="bottom" id="8tB-NR-pws"/>
+                            <constraint firstItem="HZn-Qn-SLY" firstAttribute="top" secondItem="zkv-VE-PBN" secondAttribute="bottom" constant="16" id="FHY-Mr-HJm"/>
+                            <constraint firstItem="eb1-7i-nY2" firstAttribute="top" secondItem="ffH-OH-fBy" secondAttribute="top" constant="46" id="HUt-vX-Vh9"/>
+                            <constraint firstItem="ffH-OH-fBy" firstAttribute="bottom" secondItem="2wj-cw-4Aq" secondAttribute="bottom" constant="12" id="HlZ-XK-VPn"/>
+                            <constraint firstItem="k0m-u8-x1F" firstAttribute="top" secondItem="ffH-OH-fBy" secondAttribute="top" constant="8" id="L3o-mb-yQk"/>
+                            <constraint firstItem="tHp-Se-A2W" firstAttribute="top" secondItem="5xv-kj-Atb" secondAttribute="bottom" constant="26" id="OPh-hR-Cbw"/>
+                            <constraint firstItem="8Br-Il-PLp" firstAttribute="top" secondItem="tHp-Se-A2W" secondAttribute="bottom" constant="8" id="P6c-A0-vWO"/>
+                            <constraint firstItem="zkv-VE-PBN" firstAttribute="width" secondItem="h7D-2f-VaX" secondAttribute="width" multiplier="0.7" id="SXL-mY-ru7"/>
+                            <constraint firstItem="2wj-cw-4Aq" firstAttribute="top" secondItem="HZn-Qn-SLY" secondAttribute="bottom" constant="8" id="SgT-TA-pDr"/>
+                            <constraint firstItem="5xv-kj-Atb" firstAttribute="top" secondItem="eb1-7i-nY2" secondAttribute="bottom" constant="22" id="UXY-Eg-fkw"/>
+                            <constraint firstItem="HZn-Qn-SLY" firstAttribute="leading" secondItem="ffH-OH-fBy" secondAttribute="leading" constant="22" id="YcJ-j8-e2S"/>
+                            <constraint firstItem="zkv-VE-PBN" firstAttribute="top" secondItem="szf-eX-eBC" secondAttribute="bottom" constant="16" id="c7m-eJ-vku"/>
+                            <constraint firstItem="2wj-cw-4Aq" firstAttribute="centerX" secondItem="vbf-cS-UVn" secondAttribute="centerX" multiplier="0.77" id="cFA-OY-sG6"/>
+                            <constraint firstItem="vbf-cS-UVn" firstAttribute="top" secondItem="h7D-2f-VaX" secondAttribute="top" id="f9G-lB-RqV"/>
+                            <constraint firstItem="eb1-7i-nY2" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="itL-ZW-p6J"/>
+                            <constraint firstItem="szf-eX-eBC" firstAttribute="top" secondItem="8Br-Il-PLp" secondAttribute="bottom" constant="16" id="kTR-DF-GRd"/>
+                            <constraint firstItem="vbf-cS-UVn" firstAttribute="leading" secondItem="ffH-OH-fBy" secondAttribute="leading" id="lT3-bQ-Z6T"/>
+                            <constraint firstItem="ffH-OH-fBy" firstAttribute="trailing" secondItem="k0m-u8-x1F" secondAttribute="trailing" constant="8" id="mZs-95-56C"/>
+                            <constraint firstItem="5xv-kj-Atb" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="nBZ-yz-ttI"/>
+                            <constraint firstItem="8Br-Il-PLp" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="rA2-xy-LLE"/>
+                            <constraint firstItem="vbf-cS-UVn" firstAttribute="trailing" secondItem="ffH-OH-fBy" secondAttribute="trailing" id="rj7-5Z-wot"/>
+                            <constraint firstItem="M85-hk-9SO" firstAttribute="centerX" secondItem="vbf-cS-UVn" secondAttribute="centerX" multiplier="1.23" id="ud0-5o-fC0"/>
+                            <constraint firstItem="ffH-OH-fBy" firstAttribute="trailing" secondItem="HZn-Qn-SLY" secondAttribute="trailing" constant="16" id="wvR-fD-dvO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ffH-OH-fBy"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ocV-xY-7mI"/>
+                    <connections>
+                        <outlet property="closeButton" destination="k0m-u8-x1F" id="ZMl-qJ-5Xc"/>
+                        <outlet property="topConstraint" destination="OPh-hR-Cbw" id="THy-5l-0dG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Kg-bh-Ljq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-71.514242878560722"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="THu-zE-dee">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bp0-Yd-0nk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9wi-7I-sbT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ehM-UY-Ki9" kind="relationship" relationship="rootViewController" id="3rr-PL-6Hh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJ8-VL-rs6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="-72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="privacyPolicy" width="55" height="8"/>
+        <image name="pro_background" width="375" height="667"/>
+        <image name="pro_close" width="18" height="18"/>
+        <image name="pro_icon" width="130" height="106"/>
+        <image name="pro_name" width="279" height="21"/>
+        <image name="termOfUse" width="50" height="7"/>
+    </resources>
+</document>

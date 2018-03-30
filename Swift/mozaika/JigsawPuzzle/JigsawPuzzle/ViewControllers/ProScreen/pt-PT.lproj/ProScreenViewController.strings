@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Access to all updates\n\n"; ObjectID = "AuF-9k-Rw4"; */
+"AuF-9k-Rw4.text" = "Acessar todas as atualizações\n\n";
+
+/* Class = "UILabel"; text = "Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period. Free trial will be automatically converted into 1-week Subscription at 7.99$/1week. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription, where applicable."; ObjectID = "HZn-Qn-SLY"; */
+"HZn-Qn-SLY.text" = "A assinatura irá ser renovada automaticamente, a menos que a renovação automática seja desativada pelo menos 24 horas antes do final do período atual. Haverá cobrança em conta dentro de 24 horas antes do final do período atual. O teste gratuito será automaticamente convertido em assinatura de 1 semana a 7,99$ por semana. As inscrições podem ser administradas pelo usuário e a renovação automática pode ser desativada visitando as Configurações de Conta do usuário após a compra. Qualquer parte não utilizada de um período de avaliação gratuito, caso houver, será perdida quando o usuário comprar uma assinatura, quando for o caso.";
+
+/* Class = "UILabel"; text = "3 DAYS"; ObjectID = "ID1-g5-5dE"; */
+"ID1-g5-5dE.text" = "3 dias";
+
+/* Class = "UILabel"; text = "FREE TRIAL"; ObjectID = "MZd-Iz-2On"; */
+"MZd-Iz-2On.text" = "TESTE GRATUITO";
+
+/* Class = "UILabel"; text = "Access to all puzzles"; ObjectID = "MpL-E0-evP"; */
+"MpL-E0-evP.text" = "Acessar todos os enigmas";
+
+/* Class = "UILabel"; text = "then 7,99$/week"; ObjectID = "bSt-kK-8YC"; */
+"bSt-kK-8YC.text" = "Então, $7,99/semana";
+
+/* Class = "UIButton"; normalTitle = "Restore purchases"; ObjectID = "szf-eX-eBC"; */
+"szf-eX-eBC.normalTitle" = "Restaurar compras";
+
+/* Class = "UIButton"; normalTitle = "ACTIVATE PLAN"; ObjectID = "zkv-VE-PBN"; */
+"zkv-VE-PBN.normalTitle" = "ATIVAR O PLANO";

@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Access to all updates\n\n"; ObjectID = "AuF-9k-Rw4"; */
+"AuF-9k-Rw4.text" = "Acceso a todas las actualizaciones\n\n";
+
+/* Class = "UILabel"; text = "Subscription automatically renews unless auto-renew is turned off at least 24 hours before the end of the current period. Account will be charged for renewal within 24-hours prior to the end of the current period. Free trial will be automatically converted into 1-week Subscription at 7.99$/1week. Subscriptions may be managed by the user and auto-renewal may be turned off by going to the user’s Account Settings after purchase. Any unused portion of a free trial period, if offered, will be forfeited when the user purchases a subscription, where applicable."; ObjectID = "HZn-Qn-SLY"; */
+"HZn-Qn-SLY.text" = "La suscripción se renovará automáticamente a menos que se cancele la renovación automática por lo menos 24 horas antes de que finalice el periodo actual. Se cobrará la renovación de la cuenta en el transcurso de las 24 horas previas al final del periodo actual. La prueba gratuita se convertirá automáticamente en una suscripción de 1 semana con un costo de $7.99 por semana. El usuario puede administrar las suscripciones y puede desactivar la renovación automática en la opción de Configuración de la cuenta del usuario después de que efectúe la compra. Cualquier lapso de tiempo que no se utilice de un periodo de prueba gratuito, si es ofrecido, se perderá cuando el usuario compre una suscripción, en los casos en los que corresponda.";
+
+/* Class = "UILabel"; text = "3 DAYS"; ObjectID = "ID1-g5-5dE"; */
+"ID1-g5-5dE.text" = "3 días";
+
+/* Class = "UILabel"; text = "FREE TRIAL"; ObjectID = "MZd-Iz-2On"; */
+"MZd-Iz-2On.text" = "PRUEBA GRATIS";
+
+/* Class = "UILabel"; text = "Access to all puzzles"; ObjectID = "MpL-E0-evP"; */
+"MpL-E0-evP.text" = "Acceso a todos los rompecabezas";
+
+/* Class = "UILabel"; text = "then 7,99$/week"; ObjectID = "bSt-kK-8YC"; */
+"bSt-kK-8YC.text" = "después serán $7.99 por semana";
+
+/* Class = "UIButton"; normalTitle = "Restore purchases"; ObjectID = "szf-eX-eBC"; */
+"szf-eX-eBC.normalTitle" = "Restaurar las compras";
+
+/* Class = "UIButton"; normalTitle = "ACTIVATE PLAN"; ObjectID = "zkv-VE-PBN"; */
+"zkv-VE-PBN.normalTitle" = "ACTIVAR EL PLAN";

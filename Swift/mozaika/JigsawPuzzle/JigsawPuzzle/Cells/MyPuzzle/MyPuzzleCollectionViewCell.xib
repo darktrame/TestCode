@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyPuzzleCollectionViewCell" customModule="JigsawPuzzle" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="166" height="166"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T3-Rs-Ogr" customClass="ATView" customModule="JigsawPuzzle" customModuleProvider="target">
+                        <rect key="frame" x="2" y="2" width="162" height="162"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="testImage" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-JZ-wSC">
+                                <rect key="frame" x="0.0" y="0.0" width="162" height="162"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHZ-c5-1Qm" customClass="ATView" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="2" y="110" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FoO-2g-p63">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="contin"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FoO-2g-p63" firstAttribute="top" secondItem="cHZ-c5-1Qm" secondAttribute="top" id="6Nh-1c-stj"/>
+                                    <constraint firstAttribute="height" constant="50" id="NoQ-84-RnS"/>
+                                    <constraint firstAttribute="trailing" secondItem="FoO-2g-p63" secondAttribute="trailing" id="OKU-d1-mg6"/>
+                                    <constraint firstAttribute="bottom" secondItem="FoO-2g-p63" secondAttribute="bottom" id="PCy-Kl-ydX"/>
+                                    <constraint firstItem="FoO-2g-p63" firstAttribute="leading" secondItem="cHZ-c5-1Qm" secondAttribute="leading" id="gPl-eU-hR0"/>
+                                    <constraint firstAttribute="width" constant="50" id="he0-6j-1kE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCurcular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZV-ab-IST" customClass="ATView" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="110" y="110" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeD-3l-j3E">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <state key="normal" image="trash"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XeD-3l-j3E" secondAttribute="bottom" id="5VD-IC-4wX"/>
+                                    <constraint firstAttribute="trailing" secondItem="XeD-3l-j3E" secondAttribute="trailing" id="B1U-Cy-5nh"/>
+                                    <constraint firstAttribute="width" constant="50" id="JsM-FB-jaF"/>
+                                    <constraint firstItem="XeD-3l-j3E" firstAttribute="leading" secondItem="YZV-ab-IST" secondAttribute="leading" id="Ofx-Ub-ind"/>
+                                    <constraint firstItem="XeD-3l-j3E" firstAttribute="top" secondItem="YZV-ab-IST" secondAttribute="top" id="X6F-Fk-IgP"/>
+                                    <constraint firstAttribute="height" constant="50" id="xIW-Lz-rWE"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCurcular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LZM-Cw-3Jk" customClass="ATView" customModule="JigsawPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="45" y="34" width="73" height="73"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tao-Vq-7rf">
+                                        <rect key="frame" x="0.0" y="0.0" width="73" height="73"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="25"/>
+                                        <color key="textColor" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="endPuzzle" translatesAutoresizingMaskIntoConstraints="NO" id="a2l-q0-PTB">
+                                        <rect key="frame" x="-6" y="-6" width="85" height="85"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="tao-Vq-7rf" secondAttribute="trailing" id="15H-V2-xYC"/>
+                                    <constraint firstAttribute="height" constant="73" id="8Ia-fa-t2X"/>
+                                    <constraint firstItem="a2l-q0-PTB" firstAttribute="top" secondItem="LZM-Cw-3Jk" secondAttribute="top" constant="-6" id="8u3-Oa-ALd"/>
+                                    <constraint firstAttribute="bottom" secondItem="tao-Vq-7rf" secondAttribute="bottom" id="AAx-Z4-ztf"/>
+                                    <constraint firstItem="tao-Vq-7rf" firstAttribute="top" secondItem="LZM-Cw-3Jk" secondAttribute="top" id="I2N-1w-G3v"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2l-q0-PTB" secondAttribute="trailing" constant="-6" id="OzN-YU-iSm"/>
+                                    <constraint firstItem="a2l-q0-PTB" firstAttribute="leading" secondItem="LZM-Cw-3Jk" secondAttribute="leading" constant="-6" id="Tzf-oL-M4N"/>
+                                    <constraint firstAttribute="bottom" secondItem="a2l-q0-PTB" secondAttribute="bottom" constant="-6" id="VaP-Ze-Pk4"/>
+                                    <constraint firstItem="tao-Vq-7rf" firstAttribute="leading" secondItem="LZM-Cw-3Jk" secondAttribute="leading" id="jwU-Oy-1F3"/>
+                                    <constraint firstAttribute="width" constant="73" id="pji-tP-Gbv"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isCurcular" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cHZ-c5-1Qm" firstAttribute="leading" secondItem="6T3-Rs-Ogr" secondAttribute="leading" constant="2" id="0wX-nq-fO6"/>
+                            <constraint firstItem="LZM-Cw-3Jk" firstAttribute="centerX" secondItem="6T3-Rs-Ogr" secondAttribute="centerX" id="CyN-2j-tnN"/>
+                            <constraint firstItem="LZM-Cw-3Jk" firstAttribute="centerY" secondItem="6T3-Rs-Ogr" secondAttribute="centerY" multiplier="0.87" id="Hlz-C3-TZj"/>
+                            <constraint firstAttribute="trailing" secondItem="YZV-ab-IST" secondAttribute="trailing" constant="2" id="KvQ-T0-LPn"/>
+                            <constraint firstAttribute="bottom" secondItem="nkU-JZ-wSC" secondAttribute="bottom" id="SRJ-mq-hfZ"/>
+                            <constraint firstAttribute="bottom" secondItem="YZV-ab-IST" secondAttribute="bottom" constant="2" id="ZRd-fT-IBd"/>
+                            <constraint firstAttribute="trailing" secondItem="nkU-JZ-wSC" secondAttribute="trailing" id="Zuo-bH-12Z"/>
+                            <constraint firstItem="nkU-JZ-wSC" firstAttribute="leading" secondItem="6T3-Rs-Ogr" secondAttribute="leading" id="hYj-08-cbW"/>
+                            <constraint firstAttribute="bottom" secondItem="cHZ-c5-1Qm" secondAttribute="bottom" constant="2" id="wye-PM-QFd"/>
+                            <constraint firstItem="nkU-JZ-wSC" firstAttribute="top" secondItem="6T3-Rs-Ogr" secondAttribute="top" id="zJe-HD-1W1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.35686274509999999" green="0.18823529410000001" blue="0.55294117649999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="6T3-Rs-Ogr" secondAttribute="bottom" constant="2" id="T6n-KH-e2y"/>
+                <constraint firstAttribute="trailing" secondItem="6T3-Rs-Ogr" secondAttribute="trailing" constant="2" id="VAK-bC-ojZ"/>
+                <constraint firstItem="6T3-Rs-Ogr" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="Vts-9f-zRB"/>
+                <constraint firstItem="6T3-Rs-Ogr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="2" id="yfu-3I-fD2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="continueButton" destination="FoO-2g-p63" id="9VX-Hm-TD1"/>
+                <outlet property="endPuzzleImageView" destination="a2l-q0-PTB" id="niO-dL-Hvm"/>
+                <outlet property="percentLabel" destination="tao-Vq-7rf" id="I81-rZ-gnB"/>
+                <outlet property="puzzleImageView" destination="nkU-JZ-wSC" id="vjc-EW-LM1"/>
+                <outlet property="trashButton" destination="XeD-3l-j3E" id="PZ4-0r-Cfn"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="contin" width="26" height="22"/>
+        <image name="endPuzzle" width="85" height="86"/>
+        <image name="testImage" width="164" height="164"/>
+        <image name="trash" width="20" height="28"/>
+    </resources>
+</document>
