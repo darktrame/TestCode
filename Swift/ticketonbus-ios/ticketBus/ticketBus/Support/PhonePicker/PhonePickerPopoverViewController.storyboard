@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Db7-4z-pFA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Phone Picker Popover View Controller-->
+        <scene sceneID="qcH-dK-Fpm">
+            <objects>
+                <viewController storyboardIdentifier="DatePickerPopoverViewController" id="Db7-4z-pFA" customClass="PhonePickerPopoverViewController" customModule="ticketBus" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ms5-7P-Tf5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zer-Eu-SEd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6fC-nZ-epn">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pnD-ln-Sja" customClass="CountryPicker" customModule="ticketBus">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="Z5Z-6k-Cog"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNQ-dJ-bSw">
+                                <rect key="frame" x="121.5" y="242" width="37" height="30"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="done:" destination="Db7-4z-pFA" eventType="touchUpInside" id="mD8-QR-WIb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pnD-ln-Sja" secondAttribute="trailing" id="2Ti-nu-7By"/>
+                            <constraint firstItem="Zer-Eu-SEd" firstAttribute="top" secondItem="lNQ-dJ-bSw" secondAttribute="bottom" constant="8" id="Raw-9t-bvy"/>
+                            <constraint firstItem="lNQ-dJ-bSw" firstAttribute="centerX" secondItem="6fC-nZ-epn" secondAttribute="centerX" id="dXv-pm-Kne"/>
+                            <constraint firstItem="pnD-ln-Sja" firstAttribute="top" secondItem="6fC-nZ-epn" secondAttribute="top" id="kBS-eF-lgY"/>
+                            <constraint firstItem="pnD-ln-Sja" firstAttribute="leading" secondItem="6fC-nZ-epn" secondAttribute="leading" id="uhV-zk-lFl"/>
+                        </constraints>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="280" height="280"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="280" height="280"/>
+                    <connections>
+                        <outlet property="phonePicker" destination="pnD-ln-Sja" id="mt6-ER-ZOt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21i-NQ-DWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243.19999999999999" y="-99.850074962518747"/>
+        </scene>
+    </scenes>
+</document>

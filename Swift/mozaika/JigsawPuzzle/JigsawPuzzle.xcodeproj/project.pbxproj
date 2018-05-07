@@ -41,11 +41,11 @@
 		3AB2B8F02036F977003B2007 /* ElementCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B8EF2036F977003B2007 /* ElementCollectionViewCell.swift */; };
 		3AB2B8F22036FB95003B2007 /* ElementCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AB2B8F12036FB95003B2007 /* ElementCollectionViewCell.xib */; };
 		3AB2B8F520371A48003B2007 /* EndPuzzleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AB2B8F420371A48003B2007 /* EndPuzzleViewController.swift */; };
+		3ABDDCA92090593800C81D99 /* RageProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDDCA72090593800C81D99 /* RageProducts.swift */; };
+		3ABDDCAA2090593800C81D99 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABDDCA82090593800C81D99 /* IAPHelper.swift */; };
 		3ACF54DA203D6C0100E32151 /* PuzzleItemPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACF54D9203D6C0100E32151 /* PuzzleItemPosition.swift */; };
 		3AD5B0042046CEE1001C53C6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AD5B0032046CEE1001C53C6 /* WebViewController.swift */; };
 		3AD5B0062046CEE9001C53C6 /* WebViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AD5B0052046CEE9001C53C6 /* WebViewController.storyboard */; };
-		3AE49C192047E0BD0038BB56 /* RageProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE49C172047E0BD0038BB56 /* RageProducts.swift */; };
-		3AE49C1A2047E0BD0038BB56 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE49C182047E0BD0038BB56 /* IAPHelper.swift */; };
 		3AEC9AEC2033004C00F7D40B /* UIImage + Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AEC9AEB2033004C00F7D40B /* UIImage + Size.swift */; };
 		3AECA904202D7DFF00E505B2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AECA903202D7DFF00E505B2 /* MainViewController.swift */; };
 		3AECA906202D7E3000E505B2 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AECA905202D7E3000E505B2 /* MainViewController.storyboard */; };
@@ -152,11 +152,11 @@
 		3AB2B8EF2036F977003B2007 /* ElementCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCollectionViewCell.swift; sourceTree = "<group>"; };
 		3AB2B8F12036FB95003B2007 /* ElementCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ElementCollectionViewCell.xib; sourceTree = "<group>"; };
 		3AB2B8F420371A48003B2007 /* EndPuzzleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPuzzleViewController.swift; sourceTree = "<group>"; };
+		3ABDDCA72090593800C81D99 /* RageProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RageProducts.swift; sourceTree = "<group>"; };
+		3ABDDCA82090593800C81D99 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		3ACF54D9203D6C0100E32151 /* PuzzleItemPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PuzzleItemPosition.swift; sourceTree = "<group>"; };
 		3AD5B0032046CEE1001C53C6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		3AD5B0052046CEE9001C53C6 /* WebViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebViewController.storyboard; sourceTree = "<group>"; };
-		3AE49C172047E0BD0038BB56 /* RageProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RageProducts.swift; sourceTree = "<group>"; };
-		3AE49C182047E0BD0038BB56 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
 		3AEC9AEB2033004C00F7D40B /* UIImage + Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage + Size.swift"; sourceTree = "<group>"; };
 		3AECA903202D7DFF00E505B2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3AECA905202D7E3000E505B2 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
@@ -453,8 +453,8 @@
 		3AE49C162047E0AF0038BB56 /* InAppPurchase */ = {
 			isa = PBXGroup;
 			children = (
-				3AE49C182047E0BD0038BB56 /* IAPHelper.swift */,
-				3AE49C172047E0BD0038BB56 /* RageProducts.swift */,
+				3ABDDCA82090593800C81D99 /* IAPHelper.swift */,
+				3ABDDCA72090593800C81D99 /* RageProducts.swift */,
 			);
 			path = InAppPurchase;
 			sourceTree = "<group>";
@@ -745,7 +745,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3AE49C192047E0BD0038BB56 /* RageProducts.swift in Sources */,
+				3ABDDCA92090593800C81D99 /* RageProducts.swift in Sources */,
 				3A2CFAF12031AF4800977362 /* Pictures.swift in Sources */,
 				3AECA90A202D81AC00E505B2 /* UIApplication+StatusBar.swift in Sources */,
 				3AECA910202D984300E505B2 /* CategoriesPuzzleTableViewCell.swift in Sources */,
@@ -768,7 +768,6 @@
 				3A2CFAEB2031AC3500977362 /* ConnectionManager.swift in Sources */,
 				3A72F00B203FF0C9002B1972 /* MyPuzzleViewController.swift in Sources */,
 				3A2358F9203193DA002FC293 /* PuzzleGameViewController.swift in Sources */,
-				3AE49C1A2047E0BD0038BB56 /* IAPHelper.swift in Sources */,
 				3A5E98712036DAC300739A7D /* PuzzleManager.swift in Sources */,
 				3A0558E9204A83720054CA19 /* User.swift in Sources */,
 				3AECA938202DC84E00E505B2 /* ATButton.swift in Sources */,
@@ -779,6 +778,7 @@
 				3A59A6F5203425EC009BF343 /* Array + RandomSort.swift in Sources */,
 				3AD5B0042046CEE1001C53C6 /* WebViewController.swift in Sources */,
 				3A59A6EA20341DEE009BF343 /* StepSlider.m in Sources */,
+				3ABDDCAA2090593800C81D99 /* IAPHelper.swift in Sources */,
 				3AB2B8F520371A48003B2007 /* EndPuzzleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

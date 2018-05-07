@@ -34,6 +34,16 @@ class MainViewController: UIViewController {
     setStatusBarColor(with: .applicationColor)
   }
   
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    
+    tableView.reloadData()
+    
+    if !User.isPremiumVersionActive && !UserDefaults.standard.bool(forKey: "pro") {
+      UserDefaults.standard.set(true, forKey: "pro")
+      presentProScreenViewController()
+    }
+  }
   private func setTableViewSettings() {
     tableView.rowHeight = UITableViewAutomaticDimension
     tableView.estimatedRowHeight = 44.0

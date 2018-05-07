@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Pys-Mx-8eg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile User View Controller-->
+        <scene sceneID="ePX-qz-TaZ">
+            <objects>
+                <viewController id="Pys-Mx-8eg" customClass="ProfileUserViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YLP-Cl-W0D"/>
+                        <viewControllerLayoutGuide type="bottom" id="CfG-pj-1I4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rpI-Kc-zAL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="byx-Cr-VUw">
+                                <rect key="frame" x="16" y="36" width="343" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="tMn-hu-G70"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Профиль"/>
+                                    <segment title="Мои билеты"/>
+                                </segments>
+                                <color key="tintColor" red="0.46666666666666667" green="0.62745098039215685" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="switchTabs:" destination="Pys-Mx-8eg" eventType="valueChanged" id="vfJ-lY-6vw"/>
+                                </connections>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qKv-Yq-vbd">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="byx-Cr-VUw" firstAttribute="leading" secondItem="rpI-Kc-zAL" secondAttribute="leading" priority="999" constant="16" id="8gJ-N3-izd"/>
+                            <constraint firstItem="CfG-pj-1I4" firstAttribute="top" secondItem="qKv-Yq-vbd" secondAttribute="bottom" id="DaS-Kh-CWJ"/>
+                            <constraint firstItem="byx-Cr-VUw" firstAttribute="top" secondItem="YLP-Cl-W0D" secondAttribute="bottom" constant="16" id="VYa-ZL-uaS"/>
+                            <constraint firstItem="byx-Cr-VUw" firstAttribute="centerX" secondItem="rpI-Kc-zAL" secondAttribute="centerX" id="aqI-3M-1G8"/>
+                            <constraint firstItem="qKv-Yq-vbd" firstAttribute="leading" secondItem="rpI-Kc-zAL" secondAttribute="leading" id="j8D-ox-0Hm"/>
+                            <constraint firstAttribute="trailing" secondItem="qKv-Yq-vbd" secondAttribute="trailing" id="tG2-fu-ONf"/>
+                            <constraint firstItem="qKv-Yq-vbd" firstAttribute="top" secondItem="byx-Cr-VUw" secondAttribute="bottom" constant="8" id="tJ2-8Y-R3O"/>
+                            <constraint firstAttribute="trailing" secondItem="byx-Cr-VUw" secondAttribute="trailing" priority="999" constant="16" id="y0H-Aw-wVf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="qKv-Yq-vbd" id="vRs-RG-ou1"/>
+                        <outlet property="segmentedControl" destination="byx-Cr-VUw" id="hdN-5b-pAj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vmx-tQ-q1o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880.79999999999995" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+</document>

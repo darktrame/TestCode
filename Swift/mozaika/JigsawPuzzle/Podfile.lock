@@ -64,6 +64,9 @@ PODS:
     - SDWebImage/Core (= 4.3.2)
   - SDWebImage/Core (4.3.2)
   - SwiftyJSON (4.0.0)
+  - YandexMobileMetrica (2.9.6):
+    - YandexMobileMetrica/Static (= 2.9.6)
+  - YandexMobileMetrica/Static (2.9.6)
 
 DEPENDENCIES:
   - Alamofire
@@ -78,6 +81,7 @@ DEPENDENCIES:
   - PuzzleMaker
   - SDWebImage
   - SwiftyJSON
+  - YandexMobileMetrica (= 2.9.6)
 
 SPEC CHECKSUMS:
   Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
@@ -101,7 +105,8 @@ SPEC CHECKSUMS:
   PuzzleMaker: fd57486069a1230d08a2b51c95241e29121a4c4d
   SDWebImage: 29bd3c0bc1f01e5eb59720847c64ad4c4ca1af5d
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  YandexMobileMetrica: 330c11f9e4b8b3b72454c0cd80f61b4231467ebe
 
-PODFILE CHECKSUM: 71e8f3be0439a7bc068e7417c8f1d43a9ab9f514
+PODFILE CHECKSUM: 29b92f26443a84cdfda10766fa068ca40772a15a
 
 COCOAPODS: 1.3.1

@@ -12,6 +12,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Medium</string>
+        </array>
         <array key="SFUIDisplay-Medium.otf">
             <string>SFUIDisplay-Medium</string>
         </array>
@@ -64,25 +67,47 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wj-cw-4Aq" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
-                                <rect key="frame" x="120" y="643" width="50" height="12"/>
+                                <rect key="frame" x="120.5" y="643" width="49" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="U3u-NB-gCj"/>
                                 </constraints>
-                                <state key="normal" image="termOfUse">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="8"/>
+                                <state key="normal" title="Terms of Use">
                                     <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="border" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLineBorder" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="presentFileButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="Uuq-ZU-WjB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M85-hk-9SO" customClass="ATButton" customModule="JigsawPuzzle" customModuleProvider="target">
-                                <rect key="frame" x="203" y="643" width="55" height="12"/>
+                                <rect key="frame" x="204" y="643" width="53" height="12"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="12" id="Q2B-fg-OZx"/>
                                 </constraints>
-                                <state key="normal" image="privacyPolicy">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="8"/>
+                                <state key="normal" title="Privacy Policy">
                                     <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isLineBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="border" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="presentFileButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="JjW-mT-Jyw"/>
                                 </connections>
@@ -185,6 +210,24 @@
                                     <action selector="closeButtonAction:" destination="ehM-UY-Ki9" eventType="touchUpInside" id="K1b-8s-wHf"/>
                                 </connections>
                             </button>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbm-ZD-0Ek">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9bF-IP-wm4">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0Bu-zk-NcC">
+                                            <rect key="frame" x="177.5" y="291.5" width="20" height="20"/>
+                                            <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </activityIndicatorView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="0Bu-zk-NcC" firstAttribute="centerY" secondItem="9bF-IP-wm4" secondAttribute="centerY" id="i0g-zY-ndu"/>
+                                        <constraint firstItem="0Bu-zk-NcC" firstAttribute="centerX" secondItem="9bF-IP-wm4" secondAttribute="centerX" id="jy4-YC-dM9"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -201,13 +244,16 @@
                             <constraint firstItem="k0m-u8-x1F" firstAttribute="top" secondItem="ffH-OH-fBy" secondAttribute="top" constant="8" id="L3o-mb-yQk"/>
                             <constraint firstItem="tHp-Se-A2W" firstAttribute="top" secondItem="5xv-kj-Atb" secondAttribute="bottom" constant="26" id="OPh-hR-Cbw"/>
                             <constraint firstItem="8Br-Il-PLp" firstAttribute="top" secondItem="tHp-Se-A2W" secondAttribute="bottom" constant="8" id="P6c-A0-vWO"/>
+                            <constraint firstItem="jbm-ZD-0Ek" firstAttribute="leading" secondItem="ffH-OH-fBy" secondAttribute="leading" id="QHf-ia-347"/>
                             <constraint firstItem="zkv-VE-PBN" firstAttribute="width" secondItem="h7D-2f-VaX" secondAttribute="width" multiplier="0.7" id="SXL-mY-ru7"/>
                             <constraint firstItem="2wj-cw-4Aq" firstAttribute="top" secondItem="HZn-Qn-SLY" secondAttribute="bottom" constant="8" id="SgT-TA-pDr"/>
                             <constraint firstItem="5xv-kj-Atb" firstAttribute="top" secondItem="eb1-7i-nY2" secondAttribute="bottom" constant="22" id="UXY-Eg-fkw"/>
+                            <constraint firstItem="jbm-ZD-0Ek" firstAttribute="top" secondItem="ffH-OH-fBy" secondAttribute="top" id="Y0c-DZ-igO"/>
                             <constraint firstItem="HZn-Qn-SLY" firstAttribute="leading" secondItem="ffH-OH-fBy" secondAttribute="leading" constant="22" id="YcJ-j8-e2S"/>
                             <constraint firstItem="zkv-VE-PBN" firstAttribute="top" secondItem="szf-eX-eBC" secondAttribute="bottom" constant="16" id="c7m-eJ-vku"/>
                             <constraint firstItem="2wj-cw-4Aq" firstAttribute="centerX" secondItem="vbf-cS-UVn" secondAttribute="centerX" multiplier="0.77" id="cFA-OY-sG6"/>
                             <constraint firstItem="vbf-cS-UVn" firstAttribute="top" secondItem="h7D-2f-VaX" secondAttribute="top" id="f9G-lB-RqV"/>
+                            <constraint firstItem="jbm-ZD-0Ek" firstAttribute="bottom" secondItem="ffH-OH-fBy" secondAttribute="bottom" id="hPn-Ef-JpP"/>
                             <constraint firstItem="eb1-7i-nY2" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="itL-ZW-p6J"/>
                             <constraint firstItem="szf-eX-eBC" firstAttribute="top" secondItem="8Br-Il-PLp" secondAttribute="bottom" constant="16" id="kTR-DF-GRd"/>
                             <constraint firstItem="vbf-cS-UVn" firstAttribute="leading" secondItem="ffH-OH-fBy" secondAttribute="leading" id="lT3-bQ-Z6T"/>
@@ -215,6 +261,7 @@
                             <constraint firstItem="5xv-kj-Atb" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="nBZ-yz-ttI"/>
                             <constraint firstItem="8Br-Il-PLp" firstAttribute="centerX" secondItem="ffH-OH-fBy" secondAttribute="centerX" id="rA2-xy-LLE"/>
                             <constraint firstItem="vbf-cS-UVn" firstAttribute="trailing" secondItem="ffH-OH-fBy" secondAttribute="trailing" id="rj7-5Z-wot"/>
+                            <constraint firstItem="jbm-ZD-0Ek" firstAttribute="trailing" secondItem="ffH-OH-fBy" secondAttribute="trailing" id="srd-s3-jWc"/>
                             <constraint firstItem="M85-hk-9SO" firstAttribute="centerX" secondItem="vbf-cS-UVn" secondAttribute="centerX" multiplier="1.23" id="ud0-5o-fC0"/>
                             <constraint firstItem="ffH-OH-fBy" firstAttribute="trailing" secondItem="HZn-Qn-SLY" secondAttribute="trailing" constant="16" id="wvR-fD-dvO"/>
                         </constraints>
@@ -222,7 +269,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="ocV-xY-7mI"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="0Bu-zk-NcC" id="Fww-Bd-70e"/>
                         <outlet property="closeButton" destination="k0m-u8-x1F" id="ZMl-qJ-5Xc"/>
+                        <outlet property="loadingView" destination="jbm-ZD-0Ek" id="rhb-kh-5fA"/>
                         <outlet property="topConstraint" destination="OPh-hR-Cbw" id="THy-5l-0dG"/>
                     </connections>
                 </viewController>
@@ -250,11 +299,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="privacyPolicy" width="55" height="8"/>
         <image name="pro_background" width="375" height="667"/>
         <image name="pro_close" width="18" height="18"/>
         <image name="pro_icon" width="130" height="106"/>
         <image name="pro_name" width="279" height="21"/>
-        <image name="termOfUse" width="50" height="7"/>
     </resources>
 </document>

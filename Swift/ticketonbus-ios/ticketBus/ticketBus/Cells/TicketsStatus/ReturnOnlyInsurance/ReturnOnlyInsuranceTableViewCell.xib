@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="8Y4-co-9oD" customClass="ReturnOnlyInsuranceTableViewCell" customModule="ticketBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Y4-co-9oD" id="5dd-nG-bH5">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="101.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2100 P" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yru-fh-XFV">
+                        <rect key="frame" x="17" y="16" width="107.5" height="20"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNM-68-1Aw">
+                        <rect key="frame" x="147.5" y="17" width="80" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="o92-sN-gbJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Билет" image="print">
+                            <color key="titleColor" red="0.26274509800000001" green="0.45882352939999999" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uq6-X2-IGS">
+                        <rect key="frame" x="265" y="17" width="100" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="7Oj-bL-qN5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                        <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="Возврат" image="back">
+                            <color key="titleColor" red="0.26274509800000001" green="0.45882352939999999" blue="0.63137254899999995" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100 P" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUS-qE-JdC">
+                        <rect key="frame" x="17" y="49" width="107.5" height="20"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Страховка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeC-df-ELK">
+                        <rect key="frame" x="145" y="49.5" width="84" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1hq-2G-FJ7">
+                        <rect key="frame" x="243.5" y="49.5" width="113" height="32.5"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6x6-Qc-Ox3">
+                                <rect key="frame" x="0.0" y="0.0" width="113" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Возврат:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFq-rZ-VGF">
+                                        <rect key="frame" x="0.0" y="0.0" width="54.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Одобрен" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Da-3J-g2z">
+                                        <rect key="frame" x="58.5" y="0.0" width="54.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.39607843139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="4kp-L6-Jbx">
+                                <rect key="frame" x="0.0" y="17" width="113" height="15.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="К выплате:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL4-bn-uTm">
+                                        <rect key="frame" x="0.0" y="0.0" width="68" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2100 P" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lh4-YR-X2s">
+                                        <rect key="frame" x="72" y="0.0" width="41" height="15.5"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.94509803920000002" green="0.39607843139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выплата осуществляется в срок до 30 дней" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jez-Qi-MZI">
+                        <rect key="frame" x="149.5" y="82" width="207" height="12"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sUS-qE-JdC" firstAttribute="top" secondItem="yru-fh-XFV" secondAttribute="bottom" constant="13" id="2wM-5G-dtf"/>
+                    <constraint firstItem="bNM-68-1Aw" firstAttribute="centerX" secondItem="5dd-nG-bH5" secondAttribute="centerX" id="4v7-SF-lzj"/>
+                    <constraint firstItem="bNM-68-1Aw" firstAttribute="centerY" secondItem="yru-fh-XFV" secondAttribute="centerY" id="4vz-R9-94i"/>
+                    <constraint firstItem="sUS-qE-JdC" firstAttribute="leading" secondItem="yru-fh-XFV" secondAttribute="leading" id="AGp-dH-HMP"/>
+                    <constraint firstItem="jez-Qi-MZI" firstAttribute="trailing" secondItem="1hq-2G-FJ7" secondAttribute="trailing" id="BlV-cJ-hEG"/>
+                    <constraint firstItem="NeC-df-ELK" firstAttribute="centerY" secondItem="sUS-qE-JdC" secondAttribute="centerY" id="Bww-Me-HHM"/>
+                    <constraint firstItem="yru-fh-XFV" firstAttribute="top" secondItem="5dd-nG-bH5" secondAttribute="top" constant="16" id="K4Z-al-sqL"/>
+                    <constraint firstAttribute="bottom" secondItem="jez-Qi-MZI" secondAttribute="bottom" constant="7.5" id="M34-IQ-LMQ"/>
+                    <constraint firstItem="1hq-2G-FJ7" firstAttribute="centerX" secondItem="5dd-nG-bH5" secondAttribute="centerX" multiplier="1.6" id="Vkd-TL-EPU"/>
+                    <constraint firstItem="yru-fh-XFV" firstAttribute="leading" secondItem="5dd-nG-bH5" secondAttribute="leading" constant="17" id="XhK-Sr-JTI"/>
+                    <constraint firstItem="yru-fh-XFV" firstAttribute="centerX" secondItem="5dd-nG-bH5" secondAttribute="centerX" multiplier="0.2333" constant="27" id="cJq-C5-kKd"/>
+                    <constraint firstItem="NeC-df-ELK" firstAttribute="centerX" secondItem="bNM-68-1Aw" secondAttribute="centerX" id="gIO-I9-BDH"/>
+                    <constraint firstItem="sUS-qE-JdC" firstAttribute="trailing" secondItem="yru-fh-XFV" secondAttribute="trailing" id="tsz-53-7Rp"/>
+                    <constraint firstItem="uq6-X2-IGS" firstAttribute="centerX" secondItem="5dd-nG-bH5" secondAttribute="centerX" multiplier="1.68" id="twT-Tp-VPW"/>
+                    <constraint firstItem="jez-Qi-MZI" firstAttribute="top" secondItem="1hq-2G-FJ7" secondAttribute="bottom" id="xe6-Bo-mkS"/>
+                    <constraint firstItem="1hq-2G-FJ7" firstAttribute="top" secondItem="NeC-df-ELK" secondAttribute="top" id="z5r-Ld-K4S"/>
+                    <constraint firstItem="uq6-X2-IGS" firstAttribute="centerY" secondItem="bNM-68-1Aw" secondAttribute="centerY" id="zIv-js-j2M"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="5GN-5i-eQs"/>
+            <connections>
+                <outlet property="costInsurance" destination="sUS-qE-JdC" id="Dhv-cF-2x3"/>
+                <outlet property="costReturnInsurance" destination="Lh4-YR-X2s" id="jTl-Sa-Wcy"/>
+                <outlet property="costTicket" destination="yru-fh-XFV" id="JoG-yz-PQR"/>
+                <outlet property="getTicketButton" destination="bNM-68-1Aw" id="CsY-Ag-Ayi"/>
+                <outlet property="returnTicketButton" destination="uq6-X2-IGS" id="KrK-lC-YbV"/>
+            </connections>
+            <point key="canvasLocation" x="26.5" y="-47"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="back" width="20" height="20"/>
+        <image name="print" width="20" height="20"/>
+    </resources>
+</document>

@@ -8,6 +8,7 @@
 
 import UIKit
 import StoreKit
+import CoreData
 
 protocol ProScreenViewControllerDelegate {
   func reloadTableView()
@@ -16,15 +17,17 @@ protocol ProScreenViewControllerDelegate {
 class ProScreenViewController: UIViewController {
   @IBOutlet weak var topConstraint: NSLayoutConstraint!
   @IBOutlet weak var closeButton: UIButton!
+  @IBOutlet weak var loadingView: UIVisualEffectView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   private var allProducts = [SKProduct]()
   private var timer: Timer?
+  private var restore = false
   
   var delegate: ProScreenViewControllerDelegate?
   
   override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-    
     navigationController?.navigationBar.isHidden = false
   }
   
@@ -37,6 +40,25 @@ class ProScreenViewController: UIViewController {
     }, completion: nil)
   }
   
+  func hideLoading() {
+    DispatchQueue.main.async {
+      self.activityIndicator.stopAnimating()
+      UIView.animate(withDuration: 0.3, animations: {
+        self.loadingView.alpha = 0.0
+      })
+    }
+  }
+  
+  func showErrorAlert(_ message: String) {
+    let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
+    let ok = UIAlertAction(title: "OK", style: .cancel) { (action) in
+      self.dismiss(animated: true, completion: nil)
+    }
+    
+    alert.addAction(ok)
+    self.present(alert, animated: true, completion: nil)
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
@@ -45,9 +67,15 @@ class ProScreenViewController: UIViewController {
       view.layoutIfNeeded()
     }
     
+    activityIndicator.startAnimating()
     RageProducts.store.requestProducts{ (success, products) in
       if let products = products {
         self.allProducts = products
+        self.hideLoading()
+      } else {
+        DispatchQueue.main.async {
+          self.showErrorAlert("iTunes Store error...")
+        }
       }
     }
     
@@ -57,17 +85,30 @@ class ProScreenViewController: UIViewController {
     NotificationCenter.default.addObserver(self, selector: #selector(handleRestoreNotification(_:)),
                                            name: NSNotification.Name(rawValue: IAPHelper.IAPHelperRestoreNotification),
                                            object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(errorNotification(_:)),
+                                           name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseFailedNotification),
+                                           object: nil)
     
     removeTitleBackBarButtonItem()
   }
   
   deinit {
+    
     NotificationCenter.default.removeObserver(self,
                                               name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseNotification),
                                               object: nil)
     NotificationCenter.default.removeObserver(self,
                                               name: NSNotification.Name(rawValue: IAPHelper.IAPHelperRestoreNotification),
                                               object: nil)
+    NotificationCenter.default.removeObserver(self,
+                                              name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseFailedNotification),
+                                              object: nil)
+  }
+  
+  @objc
+  private func errorNotification(_ notification: Notification) {
+    guard let message = notification.userInfo?["message"] as? String else { return }
+    showErrorAlert(message)
   }
   
   @objc
@@ -92,15 +133,26 @@ class ProScreenViewController: UIViewController {
   
   @objc
   func handlePurchaseNotification(_ notification: Notification) {
-    User.isPremiumVersionActive = true
-    if let respond = self.delegate?.reloadTableView() { respond }
-    dismiss(animated: true, completion: nil)
+    RageProducts.store.getAppReceipt(completion: {
+      DispatchQueue.main.async {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        if let respond = self.delegate?.reloadTableView() { respond }
+        self.dismiss(animated: true, completion: nil)
+      }
+    })
   }
   
   @objc
   func handleRestoreNotification(_ notification: Notification) {
-    scheduleRestoreSuccessfullAlert()
-    User.isPremiumVersionActive = true
+    RageProducts.store.getAppReceipt(completion: {
+      DispatchQueue.main.async {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        if !self.restore {
+          self.restore = true
+          self.scheduleRestoreSuccessfullAlert()
+        }
+      }
+    })
   }
   
   @IBAction func closeButtonAction(_ sender: UIButton) {
@@ -115,10 +167,12 @@ class ProScreenViewController: UIViewController {
   
   @IBAction func buy(_ sender: UIButton) {
     guard allProducts.first != nil else { return }
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
     RageProducts.store.buyProduct(allProducts.first!)
   }
   
   @IBAction func restorePurchasesButtonAction(_ sender: UIButton) {
+    UIApplication.shared.isNetworkActivityIndicatorVisible = true
     RageProducts.store.restorePurchases()
   }
 }

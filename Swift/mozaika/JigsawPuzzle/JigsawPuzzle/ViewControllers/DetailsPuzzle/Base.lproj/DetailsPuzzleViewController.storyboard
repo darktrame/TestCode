@@ -90,6 +90,9 @@
                                     <action selector="changeValue:" destination="HK7-zv-Pe1" eventType="valueChanged" id="xOE-xj-IsL"/>
                                 </connections>
                             </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JYa-Ch-LrG">
+                                <rect key="frame" x="150" y="182" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -102,9 +105,11 @@
                             <constraint firstItem="cDU-Wx-vNl" firstAttribute="top" secondItem="Ksu-pR-oHx" secondAttribute="bottom" constant="24" id="c3J-fz-UlO"/>
                             <constraint firstItem="Ksu-pR-oHx" firstAttribute="leading" secondItem="Bi3-zq-1WF" secondAttribute="leading" constant="8" id="dpm-c8-tMy"/>
                             <constraint firstItem="yht-Iq-dlq" firstAttribute="top" secondItem="7iD-jd-Klh" secondAttribute="bottom" constant="32" id="iWl-su-xZm"/>
+                            <constraint firstItem="JYa-Ch-LrG" firstAttribute="centerY" secondItem="Ksu-pR-oHx" secondAttribute="centerY" id="kco-T7-7Id"/>
                             <constraint firstItem="Bi3-zq-1WF" firstAttribute="trailing" secondItem="Ksu-pR-oHx" secondAttribute="trailing" constant="8" id="nPK-Va-rTy"/>
                             <constraint firstItem="Ksu-pR-oHx" firstAttribute="top" secondItem="Bi3-zq-1WF" secondAttribute="top" constant="8" id="s2X-EK-VNT"/>
                             <constraint firstItem="Ksu-pR-oHx" firstAttribute="height" secondItem="HOh-VR-PfU" secondAttribute="height" multiplier="0.58" id="tmH-Hw-0RE"/>
+                            <constraint firstItem="JYa-Ch-LrG" firstAttribute="centerX" secondItem="Ksu-pR-oHx" secondAttribute="centerX" id="vMZ-IU-qsb"/>
                             <constraint firstItem="7iD-jd-Klh" firstAttribute="top" secondItem="cDU-Wx-vNl" secondAttribute="bottom" constant="8" id="z8Q-jX-FfP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bi3-zq-1WF"/>
@@ -126,6 +131,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="JYa-Ch-LrG" id="G4B-BI-4GC"/>
                         <outlet property="imageView" destination="Ksu-pR-oHx" id="6lQ-4T-Wjt"/>
                         <outlet property="slider" destination="7iD-jd-Klh" id="klp-Lq-vHH"/>
                         <outlet property="stepPuzzleLabel" destination="cDU-Wx-vNl" id="Q2P-eN-mW1"/>

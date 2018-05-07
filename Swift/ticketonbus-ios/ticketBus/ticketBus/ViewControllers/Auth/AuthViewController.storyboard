@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OQ9-KQ-Sbm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Auth View Controller-->
+        <scene sceneID="LhD-ZT-axc">
+            <objects>
+                <viewController id="OQ9-KQ-Sbm" customClass="AuthViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="X0Y-BJ-fHe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Op9-7e-lA1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1pE-Hr-cjX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDQ-Ne-ntS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="KVp-Fy-QMx">
+                                        <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="KVp-Fy-QMx" firstAttribute="centerY" secondItem="oDQ-Ne-ntS" secondAttribute="centerY" id="70R-dI-zaI"/>
+                                    <constraint firstItem="KVp-Fy-QMx" firstAttribute="centerX" secondItem="oDQ-Ne-ntS" secondAttribute="centerX" id="7UR-TJ-rbQ"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_big" translatesAutoresizingMaskIntoConstraints="NO" id="VoO-hU-vOf">
+                                <rect key="frame" x="87.5" y="52" width="200" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Kzl-Dz-b9L"/>
+                                    <constraint firstAttribute="height" constant="150" id="jqB-Cz-bgx"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adT-EA-bfy" customClass="ATTextField" customModule="ticketBus" customModuleProvider="target">
+                                <rect key="frame" x="16" y="260" width="359" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Vzj-q4-nWd"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="359" id="agH-EW-J2m"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.38039215686274508" green="0.54509803921568623" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="mail"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="imageColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftTextView" value="Email"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="leftTextColorView">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-P0-g9s" customClass="ATTextField" customModule="ticketBus" customModuleProvider="target">
+                                <rect key="frame" x="16" y="300" width="359" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="q8m-Gb-3Sw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="bottomBorderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.3803921569" green="0.5450980392" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="passw"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="leftTextView" value="Пароль"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAT-Vg-pPB">
+                                <rect key="frame" x="16" y="368" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.39607843139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="HFa-Vk-8pF"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="X0v-DN-Oez"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                                <state key="normal" title="ВОЙТИ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="enterButtonAction:" destination="OQ9-KQ-Sbm" eventType="touchUpInside" id="epM-ZX-xro"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ozk-UE-uqS" customClass="ATButton" customModule="ticketBus" customModuleProvider="target">
+                                <rect key="frame" x="129" y="437" width="117" height="30"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="15"/>
+                                <state key="normal" title="Забыли пароль?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="border" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="forgotPasswordButtonAction:" destination="OQ9-KQ-Sbm" eventType="touchUpInside" id="skj-df-lmJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Jj5-P0-g9s" firstAttribute="leading" secondItem="adT-EA-bfy" secondAttribute="leading" id="0x3-aP-Jxu"/>
+                            <constraint firstItem="oDQ-Ne-ntS" firstAttribute="leading" secondItem="1pE-Hr-cjX" secondAttribute="leading" id="1QH-eM-RFh"/>
+                            <constraint firstAttribute="trailing" secondItem="adT-EA-bfy" secondAttribute="trailing" priority="999" id="341-ib-OPF"/>
+                            <constraint firstItem="TAT-Vg-pPB" firstAttribute="top" secondItem="Jj5-P0-g9s" secondAttribute="bottom" constant="28" id="3bH-e3-T20"/>
+                            <constraint firstItem="adT-EA-bfy" firstAttribute="centerX" secondItem="VoO-hU-vOf" secondAttribute="centerX" constant="8" id="6qC-9c-xDu"/>
+                            <constraint firstItem="Ozk-UE-uqS" firstAttribute="centerX" secondItem="TAT-Vg-pPB" secondAttribute="centerX" id="70G-Yr-zr9"/>
+                            <constraint firstAttribute="trailing" secondItem="oDQ-Ne-ntS" secondAttribute="trailing" id="CpY-Tn-7Bn"/>
+                            <constraint firstItem="adT-EA-bfy" firstAttribute="top" secondItem="VoO-hU-vOf" secondAttribute="bottom" constant="58" id="NQz-ZJ-gOG"/>
+                            <constraint firstAttribute="trailing" secondItem="TAT-Vg-pPB" secondAttribute="trailing" priority="999" constant="16" id="Nb9-Zi-DcT"/>
+                            <constraint firstItem="Jj5-P0-g9s" firstAttribute="trailing" secondItem="adT-EA-bfy" secondAttribute="trailing" id="ZSA-SC-orH"/>
+                            <constraint firstItem="Op9-7e-lA1" firstAttribute="top" secondItem="oDQ-Ne-ntS" secondAttribute="bottom" id="ZZv-8d-uC3"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="adT-EA-bfy" secondAttribute="leading" priority="999" id="ZkX-Xu-mjV"/>
+                            <constraint firstItem="Jj5-P0-g9s" firstAttribute="top" secondItem="adT-EA-bfy" secondAttribute="bottom" id="axx-ay-W6y"/>
+                            <constraint firstItem="VoO-hU-vOf" firstAttribute="centerX" secondItem="1pE-Hr-cjX" secondAttribute="centerX" id="cMW-nT-4Hl"/>
+                            <constraint firstItem="VoO-hU-vOf" firstAttribute="top" secondItem="X0Y-BJ-fHe" secondAttribute="bottom" constant="32" id="dfT-hz-N5I"/>
+                            <constraint firstItem="oDQ-Ne-ntS" firstAttribute="top" secondItem="1pE-Hr-cjX" secondAttribute="top" id="iXR-kD-bqf"/>
+                            <constraint firstItem="TAT-Vg-pPB" firstAttribute="leading" secondItem="1pE-Hr-cjX" secondAttribute="leading" priority="999" constant="16" id="mkL-Dd-iqs"/>
+                            <constraint firstItem="Ozk-UE-uqS" firstAttribute="top" secondItem="TAT-Vg-pPB" secondAttribute="bottom" constant="24" id="ojK-GP-wUZ"/>
+                            <constraint firstItem="TAT-Vg-pPB" firstAttribute="centerX" secondItem="adT-EA-bfy" secondAttribute="centerX" constant="-8" id="tAg-gf-RHw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KVp-Fy-QMx" id="iZa-wa-ZY1"/>
+                        <outlet property="emailTextField" destination="adT-EA-bfy" id="POO-ko-U9S"/>
+                        <outlet property="height" destination="jqB-Cz-bgx" id="sxa-u6-ltk"/>
+                        <outlet property="loadingView" destination="oDQ-Ne-ntS" id="uAv-Ee-nYe"/>
+                        <outlet property="passwordTextField" destination="Jj5-P0-g9s" id="GNX-Kh-Cpu"/>
+                        <outlet property="width" destination="Kzl-Dz-b9L" id="n0F-Ws-0mx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zhE-dA-vhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="11.244377811094454"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_big" width="200" height="150"/>
+        <image name="mail" width="20" height="20"/>
+        <image name="passw" width="20" height="20"/>
+    </resources>
+</document>

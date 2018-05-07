@@ -13,6 +13,7 @@ class DetailsPuzzleViewController: UIViewController {
   @IBOutlet weak var imageView: UIImageView!
   @IBOutlet weak var slider: StepSlider!
   @IBOutlet weak var stepPuzzleLabel: UILabel!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   private let titleViewController = NSLocalizedString("countPuzzle", comment: "")
   var puzzle: PicturesModel!
@@ -23,7 +24,12 @@ class DetailsPuzzleViewController: UIViewController {
     super.viewDidLoad()
     
     slider.maxCount = UInt(countsPuzzle.count)
-    imageView.sd_setImage(with: URL(string: puzzle.pictures), completed: nil)
+    self.activityIndicator.startAnimating()
+    imageView.sd_setImage(with: URL(string: puzzle.pictures)) { (_, _, _, _) in
+      DispatchQueue.main.async {
+        self.activityIndicator.stopAnimating()
+      }
+    }
     
     title = titleViewController
     navigationController?.interactivePopGestureRecognizer?.isEnabled = false

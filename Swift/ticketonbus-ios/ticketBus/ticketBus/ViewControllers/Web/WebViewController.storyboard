@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pLa-nc-6jR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="eun-h2-COY">
+            <objects>
+                <viewController id="pLa-nc-6jR" customClass="WebViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xNS-PX-HMt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dpa-uI-pNo">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="r2s-m0-WUZ">
+                                <rect key="frame" x="177" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V64-G6-VBt">
+                                <rect key="frame" x="16" y="36" width="343" height="17"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SQw-41-GJb" firstAttribute="trailing" secondItem="dpa-uI-pNo" secondAttribute="trailing" id="0QW-3v-mPL"/>
+                            <constraint firstItem="SQw-41-GJb" firstAttribute="bottom" secondItem="dpa-uI-pNo" secondAttribute="bottom" id="57c-xv-fSc"/>
+                            <constraint firstItem="V64-G6-VBt" firstAttribute="leading" secondItem="SQw-41-GJb" secondAttribute="leading" constant="16" id="6V8-w0-6Xh"/>
+                            <constraint firstItem="r2s-m0-WUZ" firstAttribute="centerX" secondItem="xNS-PX-HMt" secondAttribute="centerX" id="V26-dP-pmP"/>
+                            <constraint firstItem="V64-G6-VBt" firstAttribute="top" secondItem="SQw-41-GJb" secondAttribute="top" constant="16" id="k3P-aA-MFA"/>
+                            <constraint firstItem="r2s-m0-WUZ" firstAttribute="centerY" secondItem="xNS-PX-HMt" secondAttribute="centerY" id="kLT-sf-X4M"/>
+                            <constraint firstItem="dpa-uI-pNo" firstAttribute="leading" secondItem="SQw-41-GJb" secondAttribute="leading" id="kou-yZ-tNu"/>
+                            <constraint firstItem="dpa-uI-pNo" firstAttribute="top" secondItem="SQw-41-GJb" secondAttribute="top" id="nJq-cD-En8"/>
+                            <constraint firstItem="SQw-41-GJb" firstAttribute="trailing" secondItem="V64-G6-VBt" secondAttribute="trailing" constant="16" id="uY0-Uu-NgG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="SQw-41-GJb"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="r2s-m0-WUZ" id="uZ6-uh-wda"/>
+                        <outlet property="errorLabel" destination="V64-G6-VBt" id="FFp-4b-lYz"/>
+                        <outlet property="webView" destination="dpa-uI-pNo" id="qVs-Vf-udn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dFs-Zl-Zb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="558" y="-65"/>
+        </scene>
+    </scenes>
+</document>

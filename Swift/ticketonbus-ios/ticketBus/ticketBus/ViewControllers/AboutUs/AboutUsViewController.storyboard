@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vgp-M7-pmw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About Us View Controller-->
+        <scene sceneID="SlV-yJ-b6O">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="37L-eO-zb2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="Vgp-M7-pmw" customClass="AboutUsViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zJH-XH-uKQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ght-ln-Kql" customClass="PhotoScrollView" customModule="ticketBus">
+                                <rect key="frame" x="0.0" y="20" width="375" height="273.5"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="G4W-DK-yJE">
+                                <rect key="frame" x="168" y="256.5" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.84313725490196079" green="0.85490196078431369" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.94509803921568625" green="0.396078431372549" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W96-r0-81t">
+                                <rect key="frame" x="0.0" y="293.5" width="375" height="373.5"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8R-87-Eap">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1007"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcf-SI-fLD">
+                                                <rect key="frame" x="18" y="22" width="339" height="134"/>
+                                                <string key="text">Начиная с 2011 года, автостанция «Новоясеневская» служит местом прибытия и отправления регулярных междугородных и международных автобусных маршрутов. За это короткое время мы заняли ведущие позиции на рынке автотранспортных услуг, завоевали и утвердили репутацию надежного и высокопрофессионального партнера.</string>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwQ-1j-52p">
+                                                <rect key="frame" x="18" y="172" width="339" height="819"/>
+                                                <mutableString key="text">Наш основной принцип  - максимально высокое качество обслуживания и удобство пассажиров, а также привлекательность здания автостанции и прилежащей к ней территории. На автостанции своевременно производится ремонт здания, установлена охранно-пожарная сигнализация, в здании и на территории автостанции функционирует система видеонаблюдения, что обеспечивает безопасность пассажиров и персонала.
+
+Основное внимание здесь уделено повышению уровня комфорта и безопасности пассажиров. Отремонтированы залы ожидания, комната матери и ребенка, открыт буфет. В залах ожидания установлены информационное табло, позволяющие получить информацию в режиме реального времени о наличии свободных мест на указанный рейс, телевизоры. Для водителей открыта уютная комната отдыха, организовано квалифицированное медицинское обслуживание в сертифицированном медицинском кабинете. На территории автовокзала наведен и поддерживается необходимый порядок, который обеспечивает частное охранное предприятие.
+
+В целях повышения уровня безопасности пассажиров, персонала автовокзалов и автостанций, предупреждения и сокращения правонарушений в настоящий момент проведены работы по оборудованию автостанции системой видеонаблюдения, которая постоянно доказывает свою эффективность. Работники автостанций прилагают все усилия для того, чтобы пассажиры получили качественную услугу, совершали поездки в комфортных условиях и остались довольны обслуживанием.
+
+На автовокзале имеются 5 перронов отправления, 1 перрон прибытия и площадка для кратковременного нахождения автобусов. Для удобства пассажиров постоянно работают 5 билетных касс. Автоматизированная система продажи билетов позволяет быстро оформить билет в любой кассе, независимо от выбранного направления. Также в здании работают справочный терминал, камера хранения, буфет, вендинговые автоматы по продаже кофе, снеков и напитков, пункт приема платежей. Соблюдение расписания регулируется диспетчерской службой.</mutableString>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="cwQ-1j-52p" firstAttribute="leading" secondItem="tcf-SI-fLD" secondAttribute="leading" id="08o-TG-x04"/>
+                                            <constraint firstItem="tcf-SI-fLD" firstAttribute="top" secondItem="q8R-87-Eap" secondAttribute="top" constant="22" id="I4X-aW-v6m"/>
+                                            <constraint firstAttribute="trailing" secondItem="tcf-SI-fLD" secondAttribute="trailing" constant="18" id="Naq-Pg-TzZ"/>
+                                            <constraint firstItem="cwQ-1j-52p" firstAttribute="trailing" secondItem="tcf-SI-fLD" secondAttribute="trailing" id="WuM-W9-Rmr"/>
+                                            <constraint firstItem="tcf-SI-fLD" firstAttribute="leading" secondItem="q8R-87-Eap" secondAttribute="leading" constant="18" id="l0k-GG-6AM"/>
+                                            <constraint firstItem="cwQ-1j-52p" firstAttribute="top" secondItem="tcf-SI-fLD" secondAttribute="bottom" constant="16" id="mPk-Es-VVE"/>
+                                            <constraint firstAttribute="bottom" secondItem="cwQ-1j-52p" secondAttribute="bottom" constant="16" id="swB-Tv-png"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="q8R-87-Eap" secondAttribute="bottom" id="Zc0-TY-CIo"/>
+                                    <constraint firstItem="q8R-87-Eap" firstAttribute="centerX" secondItem="W96-r0-81t" secondAttribute="centerX" id="baP-pR-GL4"/>
+                                    <constraint firstItem="q8R-87-Eap" firstAttribute="top" secondItem="W96-r0-81t" secondAttribute="top" id="hFR-HM-heR"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8R-87-Eap" secondAttribute="trailing" id="iYs-cb-LDH"/>
+                                    <constraint firstItem="q8R-87-Eap" firstAttribute="leading" secondItem="W96-r0-81t" secondAttribute="leading" id="kE5-iv-hFj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G4W-DK-yJE" firstAttribute="centerX" secondItem="Ght-ln-Kql" secondAttribute="centerX" id="AxP-UK-FQI"/>
+                            <constraint firstItem="Ght-ln-Kql" firstAttribute="top" secondItem="qof-wI-hIj" secondAttribute="top" id="BAr-0B-e3t"/>
+                            <constraint firstItem="qof-wI-hIj" firstAttribute="trailing" secondItem="Ght-ln-Kql" secondAttribute="trailing" id="JSL-hI-iPh"/>
+                            <constraint firstItem="Ght-ln-Kql" firstAttribute="height" secondItem="zJH-XH-uKQ" secondAttribute="height" multiplier="0.41" id="Lo0-NZ-IGD"/>
+                            <constraint firstItem="W96-r0-81t" firstAttribute="leading" secondItem="qof-wI-hIj" secondAttribute="leading" id="bCE-kv-Nmw"/>
+                            <constraint firstItem="qof-wI-hIj" firstAttribute="bottom" secondItem="W96-r0-81t" secondAttribute="bottom" id="cvz-8P-VSI"/>
+                            <constraint firstItem="W96-r0-81t" firstAttribute="top" secondItem="Ght-ln-Kql" secondAttribute="bottom" id="gRK-3H-aUs"/>
+                            <constraint firstItem="qof-wI-hIj" firstAttribute="trailing" secondItem="W96-r0-81t" secondAttribute="trailing" id="sc1-SX-cgk"/>
+                            <constraint firstItem="Ght-ln-Kql" firstAttribute="leading" secondItem="zJH-XH-uKQ" secondAttribute="leading" id="xTV-9Q-EoH"/>
+                            <constraint firstItem="G4W-DK-yJE" firstAttribute="bottom" secondItem="Ght-ln-Kql" secondAttribute="bottom" id="xu9-i5-pHF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qof-wI-hIj"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="G4W-DK-yJE" id="aAC-nx-ks1"/>
+                        <outlet property="photoScrollView" destination="Ght-ln-Kql" id="18q-lG-WfH"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="40.929535232383813"/>
+        </scene>
+    </scenes>
+</document>

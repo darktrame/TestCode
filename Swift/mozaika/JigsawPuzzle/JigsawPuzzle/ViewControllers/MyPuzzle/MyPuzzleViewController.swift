@@ -13,6 +13,7 @@ import SDWebImage
 class MyPuzzleViewController: UIViewController {
   @IBOutlet weak var collectionView: UICollectionView!
   @IBOutlet weak var emptyLabel: UILabel!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   typealias PuzzleType = (puzzle: PicturesModel, percent: Int)
   
@@ -139,8 +140,28 @@ extension MyPuzzleViewController {
       share(cell.puzzleImageView.image!)
       return
     }
+
+    guard let url = URL(string: currentPuzzle.puzzle.pictures) else { return }
+    loadImage(url, currentPuzzle: currentPuzzle, indexPath: indexPath)
+  }
+  
+  func loadImage(_ pictures: URL, currentPuzzle: PuzzleType, indexPath: IndexPath) {
+    activityIndicator.startAnimating()
+    UIApplication.shared.beginIgnoringInteractionEvents()
     
-    continuePuzzle(currentPuzzle, id: String(myPuzzles[indexPath.item].puzzle.id), imagePuzzle: cell.puzzleImageView.image)
+    DispatchQueue.global(qos: .userInteractive).async {
+      guard let data = try? Data(contentsOf: pictures), let image = UIImage(data: data) else {
+        self.activityIndicator.stopAnimating()
+        UIApplication.shared.endIgnoringInteractionEvents()
+        return
+      }
+      
+      DispatchQueue.main.async {
+        UIApplication.shared.endIgnoringInteractionEvents()
+        self.activityIndicator.stopAnimating()
+        self.continuePuzzle(currentPuzzle, id: String(self.myPuzzles[indexPath.item].puzzle.id), imagePuzzle: image)
+      }
+    }
   }
   
   @objc

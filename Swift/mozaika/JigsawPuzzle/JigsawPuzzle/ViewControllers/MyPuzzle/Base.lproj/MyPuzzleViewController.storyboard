@@ -41,13 +41,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Sri-HW-Ldk">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                                <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="w7p-0T-YRA" firstAttribute="bottom" secondItem="5Qu-VF-Cqp" secondAttribute="bottom" id="DYw-m5-pC7"/>
                             <constraint firstItem="5Qu-VF-Cqp" firstAttribute="top" secondItem="w7p-0T-YRA" secondAttribute="top" id="LGl-tI-UBX"/>
                             <constraint firstItem="VMr-7G-mv9" firstAttribute="top" secondItem="t0l-5Q-qUt" secondAttribute="top" constant="32" id="Lxb-Ze-9dM"/>
+                            <constraint firstItem="Sri-HW-Ldk" firstAttribute="centerX" secondItem="t0l-5Q-qUt" secondAttribute="centerX" id="Ocy-Xs-Twa"/>
                             <constraint firstItem="w7p-0T-YRA" firstAttribute="trailing" secondItem="VMr-7G-mv9" secondAttribute="trailing" constant="16" id="QIq-Iu-y3e"/>
+                            <constraint firstItem="Sri-HW-Ldk" firstAttribute="centerY" secondItem="t0l-5Q-qUt" secondAttribute="centerY" id="kIK-NB-2dL"/>
                             <constraint firstItem="5Qu-VF-Cqp" firstAttribute="leading" secondItem="w7p-0T-YRA" secondAttribute="leading" id="kmg-Ai-qAe"/>
                             <constraint firstItem="w7p-0T-YRA" firstAttribute="trailing" secondItem="5Qu-VF-Cqp" secondAttribute="trailing" id="vEd-TW-eeR"/>
                             <constraint firstItem="VMr-7G-mv9" firstAttribute="leading" secondItem="w7p-0T-YRA" secondAttribute="leading" constant="16" id="vIc-hp-2Co"/>
@@ -55,6 +61,7 @@
                         <viewLayoutGuide key="safeArea" id="w7p-0T-YRA"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="Sri-HW-Ldk" id="Hs7-VA-V6j"/>
                         <outlet property="collectionView" destination="5Qu-VF-Cqp" id="wUO-yd-TGd"/>
                         <outlet property="emptyLabel" destination="VMr-7G-mv9" id="4mh-we-7DU"/>
                     </connections>

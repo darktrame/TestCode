@@ -23,6 +23,7 @@ class ATButton: UIButton {
   @IBInspectable var scaleFactor: CGFloat = 1.0
   @IBInspectable var cornerRadius: CGFloat = 0.0
   @IBInspectable var numberOfLines: Int = 1
+  @IBInspectable var isLineBorder: Bool = false
   
   var borderLayer:CALayer?
   
@@ -36,7 +37,7 @@ class ATButton: UIButton {
       let size = self.frame.size
       
       border.borderColor = borderColor.cgColor
-      border.frame = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
+      border.frame = CGRect(x: 0.0, y: isLineBorder ? size.height - borderWidth : 0.0, width: size.width, height: size.height)
       border.borderWidth = borderWidth
       border.cornerRadius = isCurcular ? self.bounds.height / 2 : cornerRadius
       

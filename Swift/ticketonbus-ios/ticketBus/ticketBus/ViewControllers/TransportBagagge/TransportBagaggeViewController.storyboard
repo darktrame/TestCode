@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dfO-tI-a5Y">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Transport Bagagge View Controller-->
+        <scene sceneID="TVu-wC-hGB">
+            <objects>
+                <viewController id="dfO-tI-a5Y" customClass="TransportBagaggeViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KvE-nS-9y3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1400"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0PI-7t-Ahd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="1380"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lbk-At-4GA">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1380"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила по перевозки багажа, ручной клади на транспортном средстве, которое осуществляет регулярно перевозку пассажиров" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYl-Mm-XMx">
+                                                <rect key="frame" x="16" y="16" width="343" height="50.5"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1en-04-pdU">
+                                                <rect key="frame" x="16" y="82.5" width="343" height="685"/>
+                                                <mutableString key="text">Согласно статье 22 "Устава автомобильного транспорта и городского наземного электрического транспорта», а также пунктов 55-72 «Правил перевозок пассажиров и багажа автомобильным транспортом и городским наземным электрическим транспортом», пассажир в автобусном транспорте имеет право перевести бесплатно свой багаж (ручную кладь), который при общем количестве сложения длины, высоты и ширины не будет превышать 120 сантиметров. Количество ручной клади допускается не более одного места. В качестве ручной клади можно провозить также одну пару лыж в чехле, коляску детскую, санки детские.
+
+Обеспечение целостности и сохранности ручной клади является обязанностью пассажира. Размещение ручной клади на местах, предназначенных для сидения, в проходе между сидениями, возле входа или выхода из транспортного средства, в том числе аварийного, запрещается.
+
+Допускается провоз за плату багажа, который в сумме при сложении длины, высоты и ширины не больше 180 сантиметров. Важно помнить, что имеются ограничения в количестве багажа на одного пассажира - не больше двух мест.
+
+Для провоза багажа необходимо приобрести багажную квитанцию на каждое место багажа. Плата за провоз багажа устанавливается перевозчиком, и как правило составляет 10% от стоимости проездного билета.
+
+Не допускаются к перевозке багажом и провозу в составе ручной клади зловонные и опасные (легковоспламеняющиеся, взрывчатые, токсичные, коррозионные и другие) вещества, холодное и огнестрельное оружие без чехлов и упаковки, а также вещи (предметы), загрязняющие транспортные средства или одежду пассажиров.</mutableString>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-Gh-cAp">
+                                                <rect key="frame" x="16" y="791.5" width="343" height="67"/>
+                                                <string key="text">Права перевозчика по перевозке багажа, ручной клади на транспортном средстве (автобусе), которое осуществляет регулярно пассажирские перевозки</string>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qs-mh-puH">
+                                                <rect key="frame" x="16" y="874.5" width="343" height="485"/>
+                                                <mutableString key="text">Перевозчик имеет все основания устанавливать свои нормы по перевозке ручной клади или багажа, которые больше размером и количеством, чем предусмотрено «Уставом автомобильного транспорта и городского наземного электрического транспорта». Также перевозчик имеет полное право отказать пассажиру автобуса в провозе ручной клади или багажа, если этот багаж или ручная кладь перекрывают проход в транспорте другим пассажирам, либо не соответствуют количеству и размерам, предусмотренным "Уставом автомобильного транспорта и городского наземного электрического транспорта».
+
+Кроме этого, перевозчик имеет право отказать в перевозке багажа либо ручной клади, если в их составе имеются зловонные и опасные (легковоспламеняющиеся, взрывчатые, токсичные, коррозионные и другие) вещества, холодное и огнестрельное оружие без чехлов и упаковки, а также вещи (предметы), загрязняющие транспортные средства или одежду пассажиров, а также если багаж или ручная кладь мешает проходу пассажиров, а равно может помешать входу и выходу пассажиров в транспортном средстве.
+
+Перевозчик должен в обязательном порядке предоставить пассажиру всю информацию о правилах и условиях перевозки багажа.</mutableString>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1Qs-mh-puH" secondAttribute="bottom" constant="20.5" id="2sR-ol-mOR"/>
+                                            <constraint firstItem="QYl-Mm-XMx" firstAttribute="leading" secondItem="Lbk-At-4GA" secondAttribute="leading" constant="16" id="8Bw-am-pmY"/>
+                                            <constraint firstItem="jWd-Gh-cAp" firstAttribute="trailing" secondItem="1en-04-pdU" secondAttribute="trailing" id="DvU-iK-csu"/>
+                                            <constraint firstItem="1Qs-mh-puH" firstAttribute="trailing" secondItem="jWd-Gh-cAp" secondAttribute="trailing" id="EYH-WC-OLg"/>
+                                            <constraint firstItem="jWd-Gh-cAp" firstAttribute="top" secondItem="1en-04-pdU" secondAttribute="bottom" constant="24" id="Lbd-ec-eKV"/>
+                                            <constraint firstItem="1Qs-mh-puH" firstAttribute="leading" secondItem="jWd-Gh-cAp" secondAttribute="leading" id="Ph4-Df-Zp1"/>
+                                            <constraint firstItem="1Qs-mh-puH" firstAttribute="top" secondItem="jWd-Gh-cAp" secondAttribute="bottom" constant="16" id="VE6-Rr-2Cm"/>
+                                            <constraint firstItem="1en-04-pdU" firstAttribute="trailing" secondItem="QYl-Mm-XMx" secondAttribute="trailing" id="XIR-ZO-6tL"/>
+                                            <constraint firstAttribute="trailing" secondItem="QYl-Mm-XMx" secondAttribute="trailing" constant="16" id="rZE-WP-vz8"/>
+                                            <constraint firstItem="jWd-Gh-cAp" firstAttribute="leading" secondItem="1en-04-pdU" secondAttribute="leading" id="vHi-3U-LB1"/>
+                                            <constraint firstItem="QYl-Mm-XMx" firstAttribute="top" secondItem="Lbk-At-4GA" secondAttribute="top" constant="16" id="vSf-fS-y1L"/>
+                                            <constraint firstItem="1en-04-pdU" firstAttribute="top" secondItem="QYl-Mm-XMx" secondAttribute="bottom" constant="16" id="vzf-hb-c15"/>
+                                            <constraint firstItem="1en-04-pdU" firstAttribute="leading" secondItem="QYl-Mm-XMx" secondAttribute="leading" id="z1b-7R-0ZW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Lbk-At-4GA" firstAttribute="leading" secondItem="0PI-7t-Ahd" secondAttribute="leading" id="2Qk-Kt-Xkn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lbk-At-4GA" secondAttribute="trailing" id="DKO-IT-M4v"/>
+                                    <constraint firstItem="Lbk-At-4GA" firstAttribute="centerX" secondItem="0PI-7t-Ahd" secondAttribute="centerX" id="Q1y-wE-dIe"/>
+                                    <constraint firstItem="Lbk-At-4GA" firstAttribute="top" secondItem="0PI-7t-Ahd" secondAttribute="top" id="QWJ-xQ-Pft"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lbk-At-4GA" secondAttribute="bottom" id="gLm-GY-h6i"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0PI-7t-Ahd" firstAttribute="leading" secondItem="FQt-E5-YLv" secondAttribute="leading" id="Zym-7F-3kX"/>
+                            <constraint firstItem="FQt-E5-YLv" firstAttribute="trailing" secondItem="0PI-7t-Ahd" secondAttribute="trailing" id="gFZ-Ss-0ki"/>
+                            <constraint firstItem="FQt-E5-YLv" firstAttribute="bottom" secondItem="0PI-7t-Ahd" secondAttribute="bottom" id="gKh-Zq-xbw"/>
+                            <constraint firstItem="0PI-7t-Ahd" firstAttribute="top" secondItem="FQt-E5-YLv" secondAttribute="top" id="xeE-gb-K48"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FQt-E5-YLv"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1400"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ide-X5-bZJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="809" y="-20"/>
+        </scene>
+    </scenes>
+</document>

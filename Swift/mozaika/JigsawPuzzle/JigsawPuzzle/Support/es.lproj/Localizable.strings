@@ -29,3 +29,5 @@
 "removeMessage" = "¿Seguro que desea eliminar este elemento de su colección?";
 "cancel" = "Cancelar";
 "remove" = "Borrar";
+"rate" = "Valora nuestra aplicación";
+"rateText" = "Si te gusta nuestra aplicación, te pedimos que te tomes un momento para valorarla";

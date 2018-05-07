@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zvI-qB-HLU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--How Return View Controller-->
+        <scene sceneID="jAK-Zj-cpQ">
+            <objects>
+                <viewController id="zvI-qB-HLU" customClass="HowReturnViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0ks-6J-hIO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="2350"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6y-k7-c2T">
+                                <rect key="frame" x="0.0" y="20" width="375" height="2330"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KI9-J1-X1f">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2305.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Правила возврата электронных билетов" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgy-kN-uW4">
+                                                <rect key="frame" x="16" y="12" width="344" height="17"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyK-EV-1M6">
+                                                <rect key="frame" x="16" y="41" width="344" height="783"/>
+                                                <mutableString key="text">Оформление возврата стоимости проезда по электронным билетам, оплаченными банковскими картами, производится в личном кабинете на сайте ticketonbus.ru. Для возврата билета необходимо заполнить стандартную форму (скачайте по ссылке), отсканировать ее, копию документа, удостоверяющего личность, и прикрепить в личном кабинете. Денежные средства за неиспользованную поездку начисляются вам в течение от 3-х до 30 календарных дней тем же способом, которым была произведена оплата.
+
+Сервисные и комиссионные сборы возврату не подлежат.
+
+Согласно статье 23 Устава автомобильного транспорта от 8 ноября 2007 г. при срыве рейса по техническим причинам или задержке рейса более чем на час, возврат денег производится в полном объеме. Если возврат билета инициирует пассажир, то производятся следующие удержания:
+
+Возврат билета более чем за 2 часа до отправления - 5% от стоимости проезда.
+Возврат билета в течение 2 часов до отправления - 15% от стоимости проезда.
+Возврат билета в течение 3 часов после отправления - 25% от стоимости проезда.
+Через 3 часа после отправления автобуса возврат денег за билет не производится.
+Если возврат производится после отправления транспортного средства, необходимо сначала сделать отметку в электронном билете у администратора (диспетчера) автостанции, с которого выполняется рейс, а затем оформить возврат на сайте ticketonbus.ru.
+
+В случае отмены рейса возвращается 100% от стоимости билета. Для этого необходимо предоставить автобусный билет с отметкой автостанции о том, что указанного в нем рейса действительно не было.
+
+Заявки на возврат стоимости проезда, выполненный на сайте на сайте ticketonbus.ru, подаются в течение 10 дней после отправления рейса. Возврат стоимости проезда производится банком в срок до 1-го месяца.</mutableString>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="При оплате банковскими картами сумма возврата перечисляется на ту же карту, с которой была произведена оплата заказа." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90J-Bj-E3k">
+                                                <rect key="frame" x="16" y="836" width="344" height="49"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Багажные билеты приобретаются в кассах автостанции." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p9-hb-0Ik">
+                                                <rect key="frame" x="16" y="897" width="344" height="33"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="РУКОВОДСТВО ПО ВОЗВРАТУ ЭЛЕКТРОННЫХ БИЛЕТОВ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKV-2r-kGW">
+                                                <rect key="frame" x="16" y="942" width="344" height="33"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В Личном кабинете («Мои билеты») после покупки билета появляется кнопка «Возврат»." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxQ-9w-K0V">
+                                                <rect key="frame" x="16" y="987" width="344" height="33"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_ticket1" translatesAutoresizingMaskIntoConstraints="NO" id="t0U-cL-LMY">
+                                                <rect key="frame" x="28" y="1032" width="320" height="554"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="554" id="4Bm-Lq-a9k"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="b3U-9H-Mxh"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vT0-wi-8yu">
+                                                <rect key="frame" x="16" y="1594" width="344" height="49"/>
+                                                <string key="text">Для осуществления возврата электронного билета, купленного на сайте, вам нужно нажать на кнопку "Возврат" и подтвердить возврат.</string>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ref_ticket2" translatesAutoresizingMaskIntoConstraints="NO" id="aq9-TB-1Bc">
+                                                <rect key="frame" x="28" y="1692" width="320" height="554"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="554" id="Wf6-Y4-4BF"/>
+                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="320" id="fTE-o8-ozp"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Обратите внимание, что возврат денежных средств осуществляется в срок до 30 дней." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BVK-H9-pGy">
+                                                <rect key="frame" x="16" y="2258" width="344" height="33"/>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vT0-wi-8yu" firstAttribute="top" secondItem="t0U-cL-LMY" secondAttribute="bottom" constant="8" id="0Q0-AK-5e1"/>
+                                            <constraint firstItem="FxQ-9w-K0V" firstAttribute="leading" secondItem="rKV-2r-kGW" secondAttribute="leading" id="4aK-vY-103"/>
+                                            <constraint firstAttribute="bottom" secondItem="BVK-H9-pGy" secondAttribute="bottom" constant="14.5" id="4e4-4J-vCO"/>
+                                            <constraint firstItem="vT0-wi-8yu" firstAttribute="trailing" secondItem="FxQ-9w-K0V" secondAttribute="trailing" id="7Zf-mY-fTM"/>
+                                            <constraint firstItem="t0U-cL-LMY" firstAttribute="centerX" secondItem="FxQ-9w-K0V" secondAttribute="centerX" id="7ye-ec-iWh"/>
+                                            <constraint firstItem="3p9-hb-0Ik" firstAttribute="trailing" secondItem="90J-Bj-E3k" secondAttribute="trailing" id="92y-JM-dyb"/>
+                                            <constraint firstItem="t0U-cL-LMY" firstAttribute="trailing" secondItem="FxQ-9w-K0V" secondAttribute="trailing" priority="999" id="9GP-bw-n11"/>
+                                            <constraint firstItem="90J-Bj-E3k" firstAttribute="trailing" secondItem="GyK-EV-1M6" secondAttribute="trailing" id="9uj-Wa-2PE"/>
+                                            <constraint firstItem="FxQ-9w-K0V" firstAttribute="trailing" secondItem="rKV-2r-kGW" secondAttribute="trailing" id="ATp-9L-lK7"/>
+                                            <constraint firstItem="GyK-EV-1M6" firstAttribute="leading" secondItem="Wgy-kN-uW4" secondAttribute="leading" id="AYG-SV-66C"/>
+                                            <constraint firstItem="rKV-2r-kGW" firstAttribute="leading" secondItem="3p9-hb-0Ik" secondAttribute="leading" id="Bsx-Xe-tsn"/>
+                                            <constraint firstItem="90J-Bj-E3k" firstAttribute="leading" secondItem="GyK-EV-1M6" secondAttribute="leading" id="EMM-jV-leI"/>
+                                            <constraint firstItem="Wgy-kN-uW4" firstAttribute="leading" secondItem="KI9-J1-X1f" secondAttribute="leading" constant="16" id="EwF-vA-Eaa"/>
+                                            <constraint firstItem="Wgy-kN-uW4" firstAttribute="top" secondItem="KI9-J1-X1f" secondAttribute="top" constant="12" id="G3U-AX-W4F"/>
+                                            <constraint firstItem="rKV-2r-kGW" firstAttribute="top" secondItem="3p9-hb-0Ik" secondAttribute="bottom" constant="12" id="KNx-3m-7rr"/>
+                                            <constraint firstAttribute="trailing" secondItem="Wgy-kN-uW4" secondAttribute="trailing" constant="15" id="SHH-CK-YJy"/>
+                                            <constraint firstItem="t0U-cL-LMY" firstAttribute="top" secondItem="FxQ-9w-K0V" secondAttribute="bottom" constant="12" id="TeW-tp-blD"/>
+                                            <constraint firstItem="FxQ-9w-K0V" firstAttribute="top" secondItem="rKV-2r-kGW" secondAttribute="bottom" constant="12" id="hUG-Bs-T6o"/>
+                                            <constraint firstItem="rKV-2r-kGW" firstAttribute="trailing" secondItem="3p9-hb-0Ik" secondAttribute="trailing" id="huY-gO-7r7"/>
+                                            <constraint firstItem="BVK-H9-pGy" firstAttribute="top" secondItem="aq9-TB-1Bc" secondAttribute="bottom" constant="12" id="l4v-p5-N5C"/>
+                                            <constraint firstItem="GyK-EV-1M6" firstAttribute="trailing" secondItem="Wgy-kN-uW4" secondAttribute="trailing" id="oTr-Sf-blj"/>
+                                            <constraint firstItem="GyK-EV-1M6" firstAttribute="top" secondItem="Wgy-kN-uW4" secondAttribute="bottom" constant="12" id="ouF-gX-9zK"/>
+                                            <constraint firstItem="vT0-wi-8yu" firstAttribute="leading" secondItem="FxQ-9w-K0V" secondAttribute="leading" id="saX-Mp-MfG"/>
+                                            <constraint firstItem="t0U-cL-LMY" firstAttribute="leading" secondItem="FxQ-9w-K0V" secondAttribute="leading" priority="999" id="skH-B3-5Qx"/>
+                                            <constraint firstItem="3p9-hb-0Ik" firstAttribute="top" secondItem="90J-Bj-E3k" secondAttribute="bottom" constant="12" id="wCN-x8-gyc"/>
+                                            <constraint firstItem="3p9-hb-0Ik" firstAttribute="leading" secondItem="90J-Bj-E3k" secondAttribute="leading" id="wEy-ly-KmI"/>
+                                            <constraint firstItem="90J-Bj-E3k" firstAttribute="top" secondItem="GyK-EV-1M6" secondAttribute="bottom" constant="12" id="zJD-ke-WTe"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="После данного шага ваш билет/страховка будет возвращенна на банковскую барту." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4HB-fC-ccx">
+                                        <rect key="frame" x="16" y="1647" width="344" height="33"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="4HB-fC-ccx" firstAttribute="leading" secondItem="vT0-wi-8yu" secondAttribute="leading" id="1Gg-P5-cY8"/>
+                                    <constraint firstItem="vT0-wi-8yu" firstAttribute="top" secondItem="t0U-cL-LMY" secondAttribute="bottom" constant="8" id="39o-gc-DLD"/>
+                                    <constraint firstItem="KI9-J1-X1f" firstAttribute="top" secondItem="g6y-k7-c2T" secondAttribute="top" id="3Rc-Qt-B8s"/>
+                                    <constraint firstAttribute="trailing" secondItem="KI9-J1-X1f" secondAttribute="trailing" id="5Rc-Hl-sSb"/>
+                                    <constraint firstItem="aq9-TB-1Bc" firstAttribute="leading" secondItem="4HB-fC-ccx" secondAttribute="leading" priority="999" id="6SA-RG-2AP"/>
+                                    <constraint firstItem="BVK-H9-pGy" firstAttribute="leading" secondItem="4HB-fC-ccx" secondAttribute="leading" id="Jqm-Dt-Rtx"/>
+                                    <constraint firstItem="KI9-J1-X1f" firstAttribute="leading" secondItem="g6y-k7-c2T" secondAttribute="leading" id="O1L-zo-QVc"/>
+                                    <constraint firstItem="vT0-wi-8yu" firstAttribute="leading" secondItem="FxQ-9w-K0V" secondAttribute="leading" id="Pv3-qg-5lX"/>
+                                    <constraint firstItem="aq9-TB-1Bc" firstAttribute="centerX" secondItem="4HB-fC-ccx" secondAttribute="centerX" id="VOI-Al-xqu"/>
+                                    <constraint firstItem="BVK-H9-pGy" firstAttribute="trailing" secondItem="4HB-fC-ccx" secondAttribute="trailing" id="WvM-Qy-fLG"/>
+                                    <constraint firstItem="4HB-fC-ccx" firstAttribute="top" secondItem="vT0-wi-8yu" secondAttribute="bottom" constant="4" id="YyS-U1-Vtw"/>
+                                    <constraint firstItem="aq9-TB-1Bc" firstAttribute="trailing" secondItem="4HB-fC-ccx" secondAttribute="trailing" priority="999" id="aTx-aT-vMz"/>
+                                    <constraint firstItem="4HB-fC-ccx" firstAttribute="trailing" secondItem="vT0-wi-8yu" secondAttribute="trailing" id="ffv-i9-tan"/>
+                                    <constraint firstItem="aq9-TB-1Bc" firstAttribute="top" secondItem="4HB-fC-ccx" secondAttribute="bottom" constant="12" id="kiE-7J-CjU"/>
+                                    <constraint firstItem="KI9-J1-X1f" firstAttribute="centerX" secondItem="g6y-k7-c2T" secondAttribute="centerX" id="sPd-kK-q1O"/>
+                                    <constraint firstAttribute="bottom" secondItem="KI9-J1-X1f" secondAttribute="bottom" id="tJl-0J-FT2"/>
+                                    <constraint firstItem="vT0-wi-8yu" firstAttribute="trailing" secondItem="FxQ-9w-K0V" secondAttribute="trailing" id="v61-lP-vtY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g6y-k7-c2T" firstAttribute="leading" secondItem="VfM-xx-G6q" secondAttribute="leading" id="5v4-67-gFW"/>
+                            <constraint firstItem="VfM-xx-G6q" firstAttribute="trailing" secondItem="g6y-k7-c2T" secondAttribute="trailing" id="9Kp-py-Urj"/>
+                            <constraint firstItem="VfM-xx-G6q" firstAttribute="bottom" secondItem="g6y-k7-c2T" secondAttribute="bottom" id="EOR-jY-jwu"/>
+                            <constraint firstItem="g6y-k7-c2T" firstAttribute="top" secondItem="VfM-xx-G6q" secondAttribute="top" id="FiT-WW-rnj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VfM-xx-G6q"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="2350"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXj-TD-mrr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ref_ticket1" width="560" height="960"/>
+        <image name="ref_ticket2" width="558" height="960"/>
+    </resources>
+</document>

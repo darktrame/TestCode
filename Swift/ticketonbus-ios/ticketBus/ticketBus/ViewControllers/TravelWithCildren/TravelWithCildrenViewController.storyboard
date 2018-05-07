@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pcn-Zn-7m1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Travel With Cildren View Controller-->
+        <scene sceneID="4Jy-3B-H9E">
+            <objects>
+                <viewController id="pcn-Zn-7m1" customClass="TravelWithCildrenViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wda-VW-Ukc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="910"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5P1-DD-iYZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="890"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJO-UH-FkB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="889"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Путешествие с детьми" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvm-5f-qor">
+                                        <rect key="frame" x="16" y="16" width="343" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpQ-7Z-cPe">
+                                        <rect key="frame" x="16" y="49" width="343" height="819"/>
+                                        <mutableString key="text">Согласно статье 21 Федерального закона от 08.11.2007 N 259-ФЗ "Устав автомобильного транспорта и городского наземного электрического транспорта», пассажир имеет право провозить с собой бесплатно ребёнка в возрасте не старше 5 лет, если он не занимает отдельного места. Для занятия отдельного места ребёнку в возрасте не старше 5 лет приобретается билет со скидкой 50% (детский билет). Ребёнку от 5 до 12 лет также приобретается билет со скидкой 50% (детский билет). За проезд детей старше 12 лет плата взимается по полному тарифу, т.е. приобретается взрослый билет. Возраст ребёнка определяется на день начала поездки. При этом пассажир обязан иметь при себе документ, который подтверждает возраст ребенка, перевозимого с предоставлением преимуществ по провозной плате.
+
+Согласно Приложению 1 к «Правилам перевозок пассажиров и багажа автомобильным транспортом и городским наземным электрическим транспортом», утвержденным постановлением Правительства Российской федерации от 14.02.2009 г. № 112, билеты для поездки в междугородном и международном сообщении (в том числе и электронные) оформляются на основании документа, удостоверяющего личность. Для детей в возрасте до 14 лет документом, удостоверяющим личность, является свидетельство о рождении. Для детей старше 14 лет документом, удостоверяющим личность, является паспорт. В случае, если ребенок является гражданином государства, в котором паспорт выдается позднее, чем в 14 лет, свидетельство о рождении будет являться документом, удостоверяющим личность, до достижения ребенком возраста, при котором выдается паспорт.
+
+На основании статьи 20 Федерального закона от 15.08.1996г. № 114-ФЗ «О порядке выезда из Российской Федерации и въезда в Российскую Федерацию», самостоятельный проезд на международных рейсах без сопровождения взрослых возможен при наличии паспорта (т.е. не ранее, чем по достижении 14 лет) и нотариально заверенного согласия от родителей либо опекунов на самостоятельный выезд за границу, с указанием, на какой срок и в какое государство разрешен самостоятельный выезд.</mutableString>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.96078431369999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="WJO-UH-FkB" secondAttribute="bottom" id="0KA-xu-MBk"/>
+                                    <constraint firstItem="WJO-UH-FkB" firstAttribute="top" secondItem="5P1-DD-iYZ" secondAttribute="top" id="Kyz-QX-yhR"/>
+                                    <constraint firstItem="bvm-5f-qor" firstAttribute="leading" secondItem="5P1-DD-iYZ" secondAttribute="leading" constant="16" id="N4L-Qc-dtp"/>
+                                    <constraint firstItem="hpQ-7Z-cPe" firstAttribute="trailing" secondItem="bvm-5f-qor" secondAttribute="trailing" id="WfR-81-bVv"/>
+                                    <constraint firstAttribute="trailing" secondItem="bvm-5f-qor" secondAttribute="trailing" constant="16" id="igh-rP-0fX"/>
+                                    <constraint firstItem="WJO-UH-FkB" firstAttribute="centerX" secondItem="5P1-DD-iYZ" secondAttribute="centerX" id="kB1-sE-MFP"/>
+                                    <constraint firstItem="bvm-5f-qor" firstAttribute="top" secondItem="5P1-DD-iYZ" secondAttribute="top" constant="16" id="ls9-B3-MXm"/>
+                                    <constraint firstItem="hpQ-7Z-cPe" firstAttribute="top" secondItem="bvm-5f-qor" secondAttribute="bottom" constant="16" id="lsy-Q7-Qmp"/>
+                                    <constraint firstItem="WJO-UH-FkB" firstAttribute="leading" secondItem="5P1-DD-iYZ" secondAttribute="leading" id="r7V-Ft-INi"/>
+                                    <constraint firstItem="hpQ-7Z-cPe" firstAttribute="leading" secondItem="bvm-5f-qor" secondAttribute="leading" id="tOC-mo-cRh"/>
+                                    <constraint firstAttribute="trailing" secondItem="WJO-UH-FkB" secondAttribute="trailing" id="ujR-Th-LGU"/>
+                                    <constraint firstItem="hpQ-7Z-cPe" firstAttribute="top" secondItem="WJO-UH-FkB" secondAttribute="bottom" constant="-840" id="zND-Nb-Jpa"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5P1-DD-iYZ" firstAttribute="leading" secondItem="kIb-h5-dOW" secondAttribute="leading" id="bg0-Cs-eTb"/>
+                            <constraint firstItem="5P1-DD-iYZ" firstAttribute="top" secondItem="kIb-h5-dOW" secondAttribute="top" id="cX3-Qh-jfp"/>
+                            <constraint firstItem="kIb-h5-dOW" firstAttribute="trailing" secondItem="5P1-DD-iYZ" secondAttribute="trailing" id="cuh-1l-bAp"/>
+                            <constraint firstItem="kIb-h5-dOW" firstAttribute="bottom" secondItem="5P1-DD-iYZ" secondAttribute="bottom" id="otP-V5-wZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kIb-h5-dOW"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="910"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Mv-aC-9OB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850" y="42"/>
+        </scene>
+    </scenes>
+</document>

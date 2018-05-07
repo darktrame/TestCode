@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="71" id="KGk-i7-Jjw" customClass="FindFlightsTableViewCell" customModule="ticketBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="where" translatesAutoresizingMaskIntoConstraints="NO" id="g0R-7v-O53">
+                        <rect key="frame" x="24" y="11.5" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="g0R-7v-O53" secondAttribute="height" multiplier="1:1" id="isz-Wl-K5S"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Откуда" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEM-qQ-vRW">
+                        <rect key="frame" x="56" y="15" width="51" height="13"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow" translatesAutoresizingMaskIntoConstraints="NO" id="k3h-9X-HAz">
+                        <rect key="frame" x="347" y="15.5" width="12" height="12"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пункт прибытия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="BAh-g8-hXT">
+                        <rect key="frame" x="136" y="12.5" width="114" height="18"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="g0R-7v-O53" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="75e-ji-E8v"/>
+                    <constraint firstItem="BAh-g8-hXT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="120" id="D3W-MX-6sO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="k3h-9X-HAz" secondAttribute="trailing" id="F0f-rK-rno"/>
+                    <constraint firstItem="g0R-7v-O53" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GI1-w2-V8B"/>
+                    <constraint firstItem="k3h-9X-HAz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BAh-g8-hXT" secondAttribute="trailing" constant="8" id="Hgq-Ke-bLz"/>
+                    <constraint firstItem="AEM-qQ-vRW" firstAttribute="leading" secondItem="g0R-7v-O53" secondAttribute="trailing" constant="12" id="KBS-63-iwo"/>
+                    <constraint firstItem="k3h-9X-HAz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NHw-Vj-Npd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="AEM-qQ-vRW" secondAttribute="bottom" constant="5" id="QJi-e0-u6y"/>
+                    <constraint firstItem="BAh-g8-hXT" firstAttribute="centerY" secondItem="AEM-qQ-vRW" secondAttribute="centerY" id="Uia-2z-Or3"/>
+                    <constraint firstItem="AEM-qQ-vRW" firstAttribute="centerY" secondItem="g0R-7v-O53" secondAttribute="centerY" id="ghj-uw-T1n"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="findLabel" destination="AEM-qQ-vRW" id="mgI-dZ-j6m"/>
+                <outlet property="imageFind" destination="g0R-7v-O53" id="j7S-po-5h8"/>
+                <outlet property="startLabel" destination="BAh-g8-hXT" id="Mbd-RX-aD4"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="66"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrow" width="12" height="12"/>
+        <image name="where" width="20" height="20"/>
+    </resources>
+</document>

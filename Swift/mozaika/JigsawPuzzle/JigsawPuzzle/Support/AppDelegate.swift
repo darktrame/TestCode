@@ -14,6 +14,7 @@ import FacebookCore
 import Fabric
 import Crashlytics
 import StoreKit
+import YandexMobileMetrica
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -26,8 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     setNotification(application)
     
     Fabric.with([Crashlytics.self])
+    YMMYandexMetrica.activate(withApiKey: "839e6078-69f0-48e7-b8e5-6c2ccbd00c7e")
     
-    RageProducts.store.getAppReceipt()
+    UserDefaults.standard.set(false, forKey: "pro")
+    RageProducts.store.getAppReceipt(completion: {})
     
     return true
   }

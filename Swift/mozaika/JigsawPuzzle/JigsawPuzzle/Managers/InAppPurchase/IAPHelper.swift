@@ -7,6 +7,7 @@
 //
 
 import StoreKit
+import SwiftyJSON
 
 public typealias ProductIdentifier = String
 public typealias ProductRequestCompletionHandler = (_ success: Bool, _ products: [SKProduct]?) -> ()
@@ -31,6 +32,13 @@ enum IAPHelperError: Error {
 }
 
 open class IAPHelper: NSObject {
+  private let dateFormatter: DateFormatter = {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd HH:mm:ss VV"
+    
+    return formatter
+  }()
+  
   static let IAPHelperPurchaseNotification = "IAPHelperPurchaseNotification"
   static let IAPHelperRestoreNotification = "IAPHelperRestoreNotification"
   static let IAPHelperPurchaseFailedNotification = "IAPHelperPurchaseFailedNotification"
@@ -113,15 +121,13 @@ extension IAPHelper: SKPaymentTransactionObserver {
       
       switch (transaction.transactionState) {
       case .purchased:
-        print("COMPLETE")
         complete(transaction: transaction)
         break
       case .failed:
-        print("FAIL")
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
         fail(transaction: transaction)
         break
       case .restored:
-        print("RESTORE")
         restore(transaction: transaction)
         break
       case .purchasing:
@@ -166,6 +172,8 @@ extension IAPHelper: SKPaymentTransactionObserver {
       deliverPurchaseFailedNotificationFor(identifier: productIdentifier, error: transactionError)
     }
     print(transaction.error?.localizedDescription)
+    NotificationCenter.default.post(name: NSNotification.Name(rawValue: IAPHelper.IAPHelperPurchaseFailedNotification),
+                                    object: nil, userInfo: ["message" : transaction.error?.localizedDescription])
     SKPaymentQueue.default().finishTransaction(transaction)
   }
 
@@ -203,12 +211,12 @@ extension IAPHelper: SKPaymentTransactionObserver {
 }
 
 extension IAPHelper: SKRequestDelegate {
-  private func validateAppReceipt(_ receipt: Data) {
+  private func validateAppReceipt(_ receipt: Data, completion: @escaping () -> Void) {
     let base64encodedReceipt = receipt.base64EncodedString()
-    let requestDictionary = ["receipt-data": base64encodedReceipt]
+    let requestDictionary = ["receipt-data": base64encodedReceipt,
+                             "password": "0902ecbdc130488dbaf28c082b64646a"]
     
     guard JSONSerialization.isValidJSONObject(requestDictionary) else { return }
-    print("Validation")
     do {
       let requestData = try JSONSerialization.data(withJSONObject: requestDictionary)
       #if DEBUG
@@ -228,10 +236,23 @@ extension IAPHelper: SKRequestDelegate {
       let task = session.uploadTask(with: request, from: requestData) { (data, response, error) in
         if let data = data, error == nil {
           do {
-            let appReceiptJSON = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-            print(appReceiptJSON)
-            guard let statusCode = appReceiptJSON?["status"] as? Int else { return }
-            User.isPremiumVersionActive = statusCode == 0
+            if let appReceiptJSON = try? JSON(data: data) {
+              guard let activeSubscriptions = appReceiptJSON["receipt"]["in_app"].array else { return }
+              let lastPurchase = activeSubscriptions.sorted {
+                guard let date1 = self.dateFormatter.date(from: $0["purchase_date"].string ?? ""),
+                  let date2 = self.dateFormatter.date(from: $1["purchase_date"].string ?? "") else { return false }
+                 return date1 > date2
+              }.first
+              
+              guard
+                let expires_date_string = lastPurchase?["expires_date"].string,
+                let purchase_date_string = lastPurchase?["purchase_date"].string,
+                let expires_date = self.dateFormatter.date(from: expires_date_string),
+                let purchase_date = self.dateFormatter.date(from: purchase_date_string) else { return }
+              User.expiresDate = expires_date
+              User.purchaseDate = purchase_date
+              completion()
+            }
           } catch {}
         }
       }
@@ -240,23 +261,23 @@ extension IAPHelper: SKRequestDelegate {
     } catch {}
   }
   
-  public func getAppReceipt() {
+  public func getAppReceipt(completion: @escaping () -> Void) {
     guard let receiptURL = Bundle.main.appStoreReceiptURL else { return }
     do {
       let receipt = try Data(contentsOf: receiptURL)
-      validateAppReceipt(receipt)
-    } catch {
-      let appReceiptRefreshRequest = SKReceiptRefreshRequest(receiptProperties: nil)
-      appReceiptRefreshRequest.delegate = self
-      appReceiptRefreshRequest.start()
-    }
+      validateAppReceipt(receipt, completion: {
+        completion()
+      })
+    } catch {}
   }
   
-  public func requestDidFinish(_ request: SKRequest) {
+  public func requestDidFinish(_ request: SKRequest, completion: @escaping () -> Void) {
     guard let receiptURL = Bundle.main.appStoreReceiptURL else { return }
     do {
       let receipt = try Data(contentsOf: receiptURL)
-      validateAppReceipt(receipt)
+      validateAppReceipt(receipt, completion: {
+        completion()
+      })
     } catch {}
   }
 }

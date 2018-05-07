@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="226" id="KGk-i7-Jjw" customClass="AdressStationTableViewCell" customModule="ticketBus" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Россия, г. Москва, ул. Новоясеневский тупик, вл. 4." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="eOD-Wa-gVV">
+                        <rect key="frame" x="18" y="14" width="301.5" height="39.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="16"/>
+                        <color key="textColor" red="0.20784313725490194" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button_map" translatesAutoresizingMaskIntoConstraints="NO" id="xuW-oH-Ijl">
+                        <rect key="frame" x="337" y="14" width="22" height="22"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Станция метро «Новоясеневская» первый вагон из центра, станция метро «Битцевский Парк» последний вагон из центра." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN0-BB-gdy">
+                        <rect key="frame" x="18" y="71.5" width="341" height="42"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="12"/>
+                        <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xuW-oH-Ijl" firstAttribute="top" secondItem="eOD-Wa-gVV" secondAttribute="top" id="0cp-88-kD6"/>
+                    <constraint firstItem="eOD-Wa-gVV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="18" id="36X-ct-6Lf"/>
+                    <constraint firstItem="fN0-BB-gdy" firstAttribute="leading" secondItem="eOD-Wa-gVV" secondAttribute="leading" id="DLG-ZU-cUy"/>
+                    <constraint firstItem="eOD-Wa-gVV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="ItF-1O-acc"/>
+                    <constraint firstItem="xuW-oH-Ijl" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eOD-Wa-gVV" secondAttribute="trailing" constant="8" id="Szh-aU-6Uk"/>
+                    <constraint firstAttribute="bottom" secondItem="fN0-BB-gdy" secondAttribute="bottom" constant="26" id="aUj-lt-CdX"/>
+                    <constraint firstAttribute="trailing" secondItem="xuW-oH-Ijl" secondAttribute="trailing" constant="16" id="uE9-np-Kt0"/>
+                    <constraint firstItem="fN0-BB-gdy" firstAttribute="trailing" secondItem="xuW-oH-Ijl" secondAttribute="trailing" id="v3X-nF-vjb"/>
+                    <constraint firstItem="fN0-BB-gdy" firstAttribute="top" secondItem="eOD-Wa-gVV" secondAttribute="bottom" constant="18" id="xGm-Uv-XvR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="33.5" y="145"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="button_map" width="22" height="22"/>
+    </resources>
+</document>

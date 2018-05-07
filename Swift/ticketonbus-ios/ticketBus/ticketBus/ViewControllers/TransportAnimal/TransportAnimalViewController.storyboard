@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vrq-3Q-l8u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+        <array key="SFUIDisplay-Semibold.otf">
+            <string>SFUIDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Transport Animal View Controller-->
+        <scene sceneID="c23-60-mxn">
+            <objects>
+                <viewController id="Vrq-3Q-l8u" customClass="TransportAnimalViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ay6-xk-J9s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="700"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dBa-U5-ccX">
+                                <rect key="frame" x="0.0" y="20" width="375" height="680"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ECD-XC-qSK">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="680"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Провоз животных" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Guz-dU-AIZ">
+                                        <rect key="frame" x="16" y="16" width="342" height="17"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Semibold" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ve5-dm-cT2">
+                                        <rect key="frame" x="16" y="48.5" width="342" height="601.5"/>
+                                        <mutableString key="text">Провоз животных регламентирован пунктами 56 и 62 «Правил перевозок пассажиров и багажа автомобильным транспортом и городским наземным электрическим транспортом», утвержденными постановлением Правительства Российской федерации от 14.02.2009 г. № 112, а также статьей 22 Федерального закона от 08.11.2007 N 259-ФЗ "Устав автомобильного транспорта и городского наземного электрического транспорта».
+
+При проезде по территории России в транспортном средстве, осуществляющем регулярные перевозки пассажиров, пассажир имеет право провозить с собой бесплатно ручную кладь в количестве не более одного места, длина, ширина и высота которого в сумме не превышают сто двадцать сантиметров. Допускается провоз в составе ручной клади животных, которые должны находиться в клетках с глухим дном (корзинах, коробах, контейнерах и др.), если размеры указанных клеток (корзин, коробов, контейнеров и др.) не превышают вышеуказанные.
+
+Согласно пункта 24 «Правил перевозок пассажиров и багажа автомобильным транспортом в международном сообщении», являющихся Приложением к «Конвенции о международных автомобильных перевозках» от 09.10.1997г., при перевозке в международном сообщении пассажир вправе перевозить с собой мелких зверей и птиц в клетках, животных (собак, кошек) за плату, установленную перевозчиком, с предоставлением при посадке на перевозимых животных документов, выданных ветеринаром государства, из которого животное вывозится.</mutableString>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.94117647058823528" green="0.96078431372549022" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Guz-dU-AIZ" secondAttribute="trailing" constant="16" id="41X-Sx-b4h"/>
+                                    <constraint firstAttribute="bottom" secondItem="ECD-XC-qSK" secondAttribute="bottom" id="5rX-Kt-8jt"/>
+                                    <constraint firstItem="ECD-XC-qSK" firstAttribute="leading" secondItem="dBa-U5-ccX" secondAttribute="leading" id="DbC-Df-Pam"/>
+                                    <constraint firstItem="Guz-dU-AIZ" firstAttribute="leading" secondItem="dBa-U5-ccX" secondAttribute="leading" constant="16" id="Fdv-su-lLW"/>
+                                    <constraint firstItem="ve5-dm-cT2" firstAttribute="leading" secondItem="Guz-dU-AIZ" secondAttribute="leading" id="MfK-ly-3fM"/>
+                                    <constraint firstItem="ve5-dm-cT2" firstAttribute="top" secondItem="ECD-XC-qSK" secondAttribute="bottom" constant="-631.5" id="NNe-nm-x5f"/>
+                                    <constraint firstItem="ve5-dm-cT2" firstAttribute="top" secondItem="Guz-dU-AIZ" secondAttribute="bottom" constant="16" id="O5N-bT-udh"/>
+                                    <constraint firstItem="ECD-XC-qSK" firstAttribute="centerX" secondItem="dBa-U5-ccX" secondAttribute="centerX" id="R9D-K1-fM6"/>
+                                    <constraint firstAttribute="trailing" secondItem="ECD-XC-qSK" secondAttribute="trailing" id="U3O-Ix-d2H"/>
+                                    <constraint firstItem="ve5-dm-cT2" firstAttribute="trailing" secondItem="Guz-dU-AIZ" secondAttribute="trailing" id="aID-F7-s8I"/>
+                                    <constraint firstItem="ECD-XC-qSK" firstAttribute="top" secondItem="dBa-U5-ccX" secondAttribute="top" id="gG4-T1-hmL"/>
+                                    <constraint firstItem="Guz-dU-AIZ" firstAttribute="top" secondItem="dBa-U5-ccX" secondAttribute="top" constant="16" id="uxE-Rq-bwS"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dBa-U5-ccX" firstAttribute="top" secondItem="FzL-ts-5cS" secondAttribute="top" id="SN5-RR-z7g"/>
+                            <constraint firstItem="FzL-ts-5cS" firstAttribute="bottom" secondItem="dBa-U5-ccX" secondAttribute="bottom" id="TIt-10-8pz"/>
+                            <constraint firstItem="FzL-ts-5cS" firstAttribute="trailing" secondItem="dBa-U5-ccX" secondAttribute="trailing" id="WVC-I4-NTj"/>
+                            <constraint firstItem="dBa-U5-ccX" firstAttribute="leading" secondItem="FzL-ts-5cS" secondAttribute="leading" id="h7x-PI-APS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FzL-ts-5cS"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="700"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zfl-wx-lwF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="270" y="385"/>
+        </scene>
+    </scenes>
+</document>

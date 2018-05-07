@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xdb-DU-EHw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Light.otf">
+            <string>SFUIDisplay-Light</string>
+        </array>
+        <array key="SFUIDisplay-Medium.otf">
+            <string>SFUIDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Pay View Controller-->
+        <scene sceneID="Vlo-PI-UHM">
+            <objects>
+                <viewController id="xdb-DU-EHw" customClass="PayViewController" customModule="ticketBus" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ot9-Ls-9YU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Места забронированы сроком на 15 минут" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Yh-EA-j4c">
+                                <rect key="frame" x="36" y="44" width="303" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заказ зарегистрирован в системе" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="lkU-vx-Om6">
+                                <rect key="frame" x="36" y="66.5" width="303" height="16.5"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="К оплате:  2100 Р" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bm2-t5-AKb">
+                                <rect key="frame" x="36" y="105" width="303" height="27"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="23"/>
+                                <color key="textColor" red="0.21568627450980393" green="0.36862745098039218" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mhN-C1-mGi">
+                                <rect key="frame" x="16" y="162" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.39607843139999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="343" id="J2f-DX-4S1"/>
+                                    <constraint firstAttribute="height" constant="45" id="vmh-uJ-24p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="17"/>
+                                <state key="normal" title="ОПЛАТИТЬ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="payButtonAction:" destination="xdb-DU-EHw" eventType="touchUpInside" id="Yel-8F-gpz"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-Ug-IsM">
+                                <rect key="frame" x="98.5" y="282" width="178" height="26"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Интернет-эквайринг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogV-hV-j7N">
+                                        <rect key="frame" x="0.0" y="0.0" width="126" height="26"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="13"/>
+                                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9p-6j-5Lb" customClass="ATButton" customModule="ticketBus" customModuleProvider="target">
+                                        <rect key="frame" x="134" y="0.0" width="44" height="26"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Medium" family="SF UI Display" pointSize="12"/>
+                                        <state key="normal" title="Uniteller">
+                                            <color key="titleColor" red="0.21568627450980393" green="0.36862745098039218" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="border" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.2156862745" green="0.36862745099999999" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ogV-hV-j7N" firstAttribute="height" secondItem="x9p-6j-5Lb" secondAttribute="height" id="FLU-Cm-EY4"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="visa" translatesAutoresizingMaskIntoConstraints="NO" id="07t-R7-j7h">
+                                <rect key="frame" x="70" y="233" width="234" height="45"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qCK-dd-nKH">
+                                <rect key="frame" x="0.0" y="334" width="375" height="333"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HJG-0f-n6C">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="591.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTu-zh-max">
+                                                <rect key="frame" x="16" y="16" width="343" height="559.5"/>
+                                                <string key="text">Уважаемый клиент!
+Вы можете оплатить свой заказ онлайн с помощью предложенных методов оплат через платежный сервис компании Uniteller. После подтверждения заказа Вы будете перенаправлены на защищенную платежную страницу Uniteller, где необходимо будет ввести данные для оплаты заказа. После успешной оплаты на указанную в форме оплаты электронную почту будет направлен электронный чек с информацией о заказе и данными по произведенной оплате. 
+
+Гарантии безопасности
+Безопасность процессинга Uniteller подтверждена сертификатом стандарта безопасности данных индустрии платежных карт PCI DSS. Надежность сервиса обеспечивается интеллектуальной системой мониторинга мошеннических операций, а также применением 3D Secure - современной технологией безопасности интернет-платежей. 
+Данные Вашей карты вводятся на специальной защищенной платежной странице. Передача информации в процессинговую компанию Uniteller происходит с применением технологии шифрования TLS. Дальнейшая передача информации осуществляется по закрытым банковским каналам, имеющим наивысший уровень надежности. 
+Uniteller не передает данные Вашей карты магазину и иным третьим лицам!
+Если Ваша карта поддерживает технологию 3D Secure, для осуществления платежа, Вам необходимо будет пройти дополнительную проверку пользователя в банке-эмитенте (банк, который выпустил Вашу карту). Для этого Вы будете направлены на страницу банка, выдавшего карту. Вид проверки зависит от банка. Как правило, это дополнительный пароль, который отправляется в SMS, карта переменных кодов, либо другие способы. 
+Если у Вас возникли вопросы по совершенному платежу, Вы можете обратиться в службу технической поддержки процессингового центра Uniteller: support@uniteller.ru или по телефону 8 800 100 19 60.</string>
+                                                <fontDescription key="fontDescription" name="SFUIDisplay-Light" family="SF UI Display" pointSize="12"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="oTu-zh-max" secondAttribute="trailing" constant="16" id="2M3-Yl-Dzw"/>
+                                            <constraint firstItem="oTu-zh-max" firstAttribute="leading" secondItem="HJG-0f-n6C" secondAttribute="leading" constant="16" id="Kg6-pA-Gen"/>
+                                            <constraint firstAttribute="bottom" secondItem="oTu-zh-max" secondAttribute="bottom" constant="16" id="Mbe-fk-Tg9"/>
+                                            <constraint firstItem="oTu-zh-max" firstAttribute="top" secondItem="HJG-0f-n6C" secondAttribute="top" constant="16" id="lCp-Oe-4YE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HJG-0f-n6C" firstAttribute="leading" secondItem="qCK-dd-nKH" secondAttribute="leading" id="L9T-z9-ysz"/>
+                                    <constraint firstItem="HJG-0f-n6C" firstAttribute="top" secondItem="qCK-dd-nKH" secondAttribute="top" id="Ya5-2H-sMr"/>
+                                    <constraint firstItem="HJG-0f-n6C" firstAttribute="centerX" secondItem="qCK-dd-nKH" secondAttribute="centerX" id="a9z-NB-bYT"/>
+                                    <constraint firstAttribute="bottom" secondItem="HJG-0f-n6C" secondAttribute="bottom" id="eUW-WY-Jin"/>
+                                    <constraint firstAttribute="trailing" secondItem="HJG-0f-n6C" secondAttribute="trailing" id="hFW-5P-VgL"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="07t-R7-j7h" firstAttribute="centerX" secondItem="mhN-C1-mGi" secondAttribute="centerX" id="3cg-Fi-mbO"/>
+                            <constraint firstItem="mhN-C1-mGi" firstAttribute="centerX" secondItem="bm2-t5-AKb" secondAttribute="centerX" id="5Wx-hi-Sqo"/>
+                            <constraint firstItem="qCK-dd-nKH" firstAttribute="leading" secondItem="jDT-4d-MrI" secondAttribute="leading" id="63E-FR-9Rp"/>
+                            <constraint firstItem="jDT-4d-MrI" firstAttribute="trailing" secondItem="mhN-C1-mGi" secondAttribute="trailing" priority="999" constant="16" id="9nY-YH-cTa"/>
+                            <constraint firstItem="qCK-dd-nKH" firstAttribute="top" secondItem="AMa-Ug-IsM" secondAttribute="bottom" constant="26" id="A6I-PP-K4D"/>
+                            <constraint firstItem="6Yh-EA-j4c" firstAttribute="top" secondItem="jDT-4d-MrI" secondAttribute="top" constant="24" id="HFL-ht-pnX"/>
+                            <constraint firstItem="AMa-Ug-IsM" firstAttribute="centerX" secondItem="07t-R7-j7h" secondAttribute="centerX" id="Ht5-Uw-H1I"/>
+                            <constraint firstItem="lkU-vx-Om6" firstAttribute="top" secondItem="6Yh-EA-j4c" secondAttribute="bottom" constant="6" id="MUM-2W-Y00"/>
+                            <constraint firstItem="mhN-C1-mGi" firstAttribute="leading" secondItem="jDT-4d-MrI" secondAttribute="leading" priority="999" constant="16" id="UFa-PG-42X"/>
+                            <constraint firstItem="bm2-t5-AKb" firstAttribute="top" secondItem="lkU-vx-Om6" secondAttribute="bottom" constant="22" id="VkQ-e7-oCG"/>
+                            <constraint firstItem="07t-R7-j7h" firstAttribute="top" secondItem="mhN-C1-mGi" secondAttribute="bottom" constant="26" id="WXa-mE-7Qf"/>
+                            <constraint firstItem="jDT-4d-MrI" firstAttribute="trailing" secondItem="6Yh-EA-j4c" secondAttribute="trailing" constant="36" id="kAv-hp-ryB"/>
+                            <constraint firstItem="lkU-vx-Om6" firstAttribute="leading" secondItem="6Yh-EA-j4c" secondAttribute="leading" id="mlJ-Ty-VTS"/>
+                            <constraint firstItem="mhN-C1-mGi" firstAttribute="top" secondItem="bm2-t5-AKb" secondAttribute="bottom" constant="30" id="n3j-uH-6te"/>
+                            <constraint firstItem="qCK-dd-nKH" firstAttribute="bottom" secondItem="jDT-4d-MrI" secondAttribute="bottom" id="p2N-zJ-U7X"/>
+                            <constraint firstItem="AMa-Ug-IsM" firstAttribute="top" secondItem="07t-R7-j7h" secondAttribute="bottom" constant="4" id="phd-oC-Ccp"/>
+                            <constraint firstItem="lkU-vx-Om6" firstAttribute="trailing" secondItem="6Yh-EA-j4c" secondAttribute="trailing" id="uF7-aq-gLu"/>
+                            <constraint firstItem="bm2-t5-AKb" firstAttribute="trailing" secondItem="lkU-vx-Om6" secondAttribute="trailing" id="wbQ-Zf-lkQ"/>
+                            <constraint firstItem="qCK-dd-nKH" firstAttribute="trailing" secondItem="jDT-4d-MrI" secondAttribute="trailing" id="whX-xc-yrm"/>
+                            <constraint firstItem="6Yh-EA-j4c" firstAttribute="leading" secondItem="jDT-4d-MrI" secondAttribute="leading" constant="36" id="yUh-Ha-pGc"/>
+                            <constraint firstItem="bm2-t5-AKb" firstAttribute="leading" secondItem="lkU-vx-Om6" secondAttribute="leading" id="yxD-li-A3A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jDT-4d-MrI"/>
+                    </view>
+                    <connections>
+                        <outlet property="currentCostLabel" destination="bm2-t5-AKb" id="bXg-SM-842"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GVK-lw-jfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="visa" width="234" height="45"/>
+    </resources>
+</document>

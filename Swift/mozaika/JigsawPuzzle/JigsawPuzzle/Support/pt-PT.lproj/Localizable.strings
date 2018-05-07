@@ -29,3 +29,5 @@
 "removeMessage" = "Tem certeza que você quer remover este item da sua coleção?";
 "cancel" = "Cancelar";
 "remove" = "Excluir";
+"rate" = "Avalie nosso app";
+"rateText" = "Se você gosta do nosso app, não se esqueça de avaliar";
